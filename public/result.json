@@ -1,0 +1,2793 @@
+{
+    "result": [
+        {
+            "id": "281bca81affa89da37519c3492477b4b",
+            "slug": "2023-08-22-nurnberg-90411-nordostpark-21-e284be0a",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "Nordostpark",
+            "description": "Nordostpark 21 (Hinter der Firma PlusOptix)",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-22T11:00:00+02:00",
+                    "timestamp": 1692694800,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-22T13:30:00+02:00",
+                    "timestamp": 1692703800,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "pfundskerl",
+                "company": "Pfundskerl",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Pfundskerl",
+                    "long": "Pfundskerl"
+                },
+                "offer": "Burger, Pommes & mehr",
+                "tags": [
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "potatoes",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-21-07d7ae95",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 21, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "21",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48557058",
+                    "longitude": "11.12659807",
+                    "what3words": "k\u00fcbel.erh\u00f6hter.sowie"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Pfundskerl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Pfundskerl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png"
+                }
+            },
+            "distance": {
+                "value": 61,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "caecbb06dc012bcdf07a5d335c91e346",
+            "slug": "2023-08-22-nurnberg-90411-nordostpark-55-be56a9f9",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "N\u00fcrnberg Nordostpark",
+            "description": "Hinter Plusoptix",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-22T11:00:00+02:00",
+                    "timestamp": 1692694800,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-22T13:30:00+02:00",
+                    "timestamp": 1692703800,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "jennys-verwandelbar",
+                "company": "Jenny\u00b4s VerwandelBar",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Jenny\u00b4s Bar",
+                    "long": "Jenny\u00b4s VerwandelBar"
+                },
+                "offer": "Bowls",
+                "tags": [
+                    "beveragesCoffee",
+                    "salads",
+                    "vegan",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-55-7ecf95e8",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 55, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "55",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48568000",
+                    "longitude": "11.12664000",
+                    "what3words": "ausf\u00fchren.kern.teilt"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Jenny\u00b4s VerwandelBar",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/ac191aa4752323cda645247713239093.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/ac191aa4752323cda645247713239093.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/ac191aa4752323cda645247713239093.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/ac191aa4752323cda645247713239093.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Jenny\u00b4s VerwandelBar",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png"
+                }
+            },
+            "distance": {
+                "value": 59,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "e490cae843b386da0f1d32bdb0984628",
+            "slug": "2023-08-22-nurnberg-90411-nordostpark-33-841f9e76",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "N\u00fcrnberg - Nordostpark",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-22T11:00:00+02:00",
+                    "timestamp": 1692694800,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-22T13:30:00+02:00",
+                    "timestamp": 1692703800,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "the-dukes",
+                "company": "The Dukes",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "The Dukes",
+                    "long": "The Dukes"
+                },
+                "offer": "Wraps & Salads",
+                "tags": [
+                    "bbqGrill",
+                    "burgerSandwiches",
+                    "salads",
+                    "mexican",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-33-f703895a",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 33, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "33",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48422010",
+                    "longitude": "11.12686490",
+                    "what3words": "ablehnte.staub.essen"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png"
+                }
+            },
+            "distance": {
+                "value": 159,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "93d5db40fcda88434fb355cf06b443ef",
+            "slug": "2023-08-22-nurnberg-90411-nordostpark-82-b87d8c73",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "N-NORDOSTPARK (Suxxeed)",
+            "description": "",
+            "sponsor": "SUXXEED",
+            "date": {
+                "start": {
+                    "date": "2023-08-22T11:30:00+02:00",
+                    "timestamp": 1692696600,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-22T13:30:00+02:00",
+                    "timestamp": 1692703800,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "cold-cuts",
+                "company": "COLD CUTS",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "COLD CUTS",
+                    "long": "COLD CUTS"
+                },
+                "offer": "Sub Sandwiches",
+                "tags": [
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "sweets",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-66c37c07",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48516096",
+                    "longitude": "11.12867107",
+                    "what3words": "muscheln.bestellte.weinrot"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo COLD CUTS",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo COLD CUTS",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png"
+                }
+            },
+            "distance": {
+                "value": 100,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "16df2857e572b1a762fe46654f909ccd",
+            "slug": "2023-08-23-nurnberg-90411-nordostpark-23-7dd8f747",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "PlusOptix",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-23T11:00:00+02:00",
+                    "timestamp": 1692781200,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-23T13:30:00+02:00",
+                    "timestamp": 1692790200,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "the-banh-mi",
+                "company": "The Banh Mi",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "The Banh Mi",
+                    "long": "The Banh Mi"
+                },
+                "offer": "Banh Mi, Nudelsuppe, Sommerrolle...",
+                "tags": [
+                    "asian",
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "soups",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-23-eab9fbbf",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 23, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "23",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48534000",
+                    "longitude": "11.12634000",
+                    "what3words": "palmen.allemal.gebieten"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo The Banh Mi",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/947819f687654725179071c271c845da.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/947819f687654725179071c271c845da.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/947819f687654725179071c271c845da.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/947819f687654725179071c271c845da.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo The Banh Mi",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png"
+                }
+            },
+            "distance": {
+                "value": 85,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "1701abae5c83975aea8e2309ea7941fd",
+            "slug": "2023-08-23-nurnberg-90411-nordostpark-82-c7b503af",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Nordostpark",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-23T11:00:00+02:00",
+                    "timestamp": 1692781200,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-23T13:30:00+02:00",
+                    "timestamp": 1692790200,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "kobo-korean-bowl",
+                "company": "KoBo - Korean Bowls",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "KoBo",
+                    "long": "KoBo - Korean Bowls"
+                },
+                "offer": "Korean Bowls",
+                "tags": [
+                    "asian",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-cbbbaa1e",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48514444",
+                    "longitude": "11.12864077",
+                    "what3words": "tropen.fahrpreis.offiziell"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo neu",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/888240d40fc870eee51fec44c96eb26f.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/888240d40fc870eee51fec44c96eb26f.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/888240d40fc870eee51fec44c96eb26f.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/888240d40fc870eee51fec44c96eb26f.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo neu",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/bc16a31b94290bd4ce386e63e6003868.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/bc16a31b94290bd4ce386e63e6003868.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/bc16a31b94290bd4ce386e63e6003868.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/bc16a31b94290bd4ce386e63e6003868.png"
+                }
+            },
+            "distance": {
+                "value": 99,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "f19e0c3ee88189dba9ecb76fd897259d",
+            "slug": "2023-08-23-nurnberg-90411-nordostpark-21-117cedb2",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "Plusoptix",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-23T11:15:00+02:00",
+                    "timestamp": 1692782100,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-23T13:30:00+02:00",
+                    "timestamp": 1692790200,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "kuechenkind-streetfood",
+                "company": "K\u00fcchenkind Streetfood",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "K\u00fcchenkind",
+                    "long": "K\u00fcchenkind Streetfood"
+                },
+                "offer": "Sandwiches & mehr",
+                "tags": [
+                    "burgerSandwiches"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-21-3256bbd1",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 21, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "21",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48478000",
+                    "longitude": "11.12615000",
+                    "what3words": "absteigen.essig.betonte"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo K\u00fcchenkind Streetfood",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo K\u00fcchenkind Streetfood",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png"
+                }
+            },
+            "distance": {
+                "value": 131,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "32816e0892fd166b491fec77faa3ef3a",
+            "slug": "2023-08-24-nurnberg-90411-nordostpark-82-457943cd",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "Suxxeed",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-24T11:00:00+02:00",
+                    "timestamp": 1692867600,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-24T13:30:00+02:00",
+                    "timestamp": 1692876600,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "don-burrito2",
+                "company": "Don Burrito",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Don Burrito",
+                    "long": "Don Burrito"
+                },
+                "offer": "Mexican Food",
+                "tags": [
+                    "mexican"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-cdda970d",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48518942",
+                    "longitude": "11.12865485",
+                    "what3words": "verputzen.geschirr.spechte"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Burrito Bandito",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/cafb62352e8ddc34bbb164d1b5499c49.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/cafb62352e8ddc34bbb164d1b5499c49.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/cafb62352e8ddc34bbb164d1b5499c49.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/cafb62352e8ddc34bbb164d1b5499c49.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Burrito Bandito",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/6ae17b2d9e6f6d994cd98f1b674efdea.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/6ae17b2d9e6f6d994cd98f1b674efdea.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/6ae17b2d9e6f6d994cd98f1b674efdea.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/6ae17b2d9e6f6d994cd98f1b674efdea.png"
+                }
+            },
+            "distance": {
+                "value": 97,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "1b7976973b237505820bb1147f30d54a",
+            "slug": "2023-08-24-nurnberg-90411-nordostpark-21-78b05c13",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Nordostpark",
+            "description": "Nordostpark 21 (Hinter der Firma PlusOptix)",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-24T11:30:00+02:00",
+                    "timestamp": 1692869400,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-24T14:00:00+02:00",
+                    "timestamp": 1692878400,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "regina-2-0",
+                "company": "regiNA 2.0",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "regiNA 2.0",
+                    "long": "regiNA 2.0"
+                },
+                "offer": "Pizzen",
+                "tags": [
+                    "beveragesCoffee",
+                    "italian",
+                    "sweets",
+                    "vegan",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_debitcard"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-21-3a8ba7a2",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 21, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "21",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48478000",
+                    "longitude": "11.12615000",
+                    "what3words": "absteigen.essig.betonte"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "regiNA 2.0",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png"
+                }
+            },
+            "pointer": {
+                "title": "regiNA 2.0",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png"
+                }
+            },
+            "distance": {
+                "value": 131,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "d008a9aab0182564828fc969bbb1dd77",
+            "slug": "2023-08-25-nurnberg-90411-nordostpark-82-b8567825",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Suxxeed - Nordostpark",
+            "description": "NOP - Suxxeed",
+            "sponsor": "NOP - Suxxeed",
+            "date": {
+                "start": {
+                    "date": "2023-08-25T11:30:00+02:00",
+                    "timestamp": 1692955800,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-25T13:30:00+02:00",
+                    "timestamp": 1692963000,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "tom-berry-foodtrucks",
+                "company": "Tom & Berry Foodtrucks",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Tom & Berry",
+                    "long": "Tom & Berry Foodtrucks"
+                },
+                "offer": "Currywurst & belgische Pommes",
+                "tags": [
+                    "sausages",
+                    "potatoes"
+                ],
+                "payments": [
+                    "pay_cash"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-b427217c",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48551710",
+                    "longitude": "11.12862960",
+                    "what3words": "wozu.bemerken.pfleger"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Tom&Berry",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5f6e77b78b31bdc585584241ee215ea7.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5f6e77b78b31bdc585584241ee215ea7.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/5f6e77b78b31bdc585584241ee215ea7.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5f6e77b78b31bdc585584241ee215ea7.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Tom&Berry",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/634a0aa94eed5e2d1303b3ae7f15a78f.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/634a0aa94eed5e2d1303b3ae7f15a78f.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/634a0aa94eed5e2d1303b3ae7f15a78f.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/634a0aa94eed5e2d1303b3ae7f15a78f.png"
+                }
+            },
+            "distance": {
+                "value": 85,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "140449bebf3f838c8a439244ea69fae3",
+            "slug": "2023-08-28-nurnberg-90411-nordostpark-82-2aaa47a5",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "N-Nordostpark",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-28T11:00:00+02:00",
+                    "timestamp": 1693213200,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-28T13:30:00+02:00",
+                    "timestamp": 1693222200,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "ribwich",
+                "company": "RibWich",
+                "featured": false,
+                "verified": true,
+                "organic": false,
+                "name": {
+                    "short": "RibWich",
+                    "long": "RibWich"
+                },
+                "offer": "Barbecue & more",
+                "tags": [
+                    "burgerSandwiches",
+                    "bbqGrill"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google",
+                    "coupon_foodschein"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-914c3278",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48551100",
+                    "longitude": "11.12873300",
+                    "what3words": "senden.fr\u00fchester.gesch\u00fctzt"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Ribwich transparent",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/08e90dca6ee943fd6cb8fb29ea93b6a8.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/08e90dca6ee943fd6cb8fb29ea93b6a8.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/08e90dca6ee943fd6cb8fb29ea93b6a8.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/08e90dca6ee943fd6cb8fb29ea93b6a8.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Ribwich transparent",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/dae55751f59d2b3dc1db7f27e01726b5.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/dae55751f59d2b3dc1db7f27e01726b5.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/dae55751f59d2b3dc1db7f27e01726b5.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/dae55751f59d2b3dc1db7f27e01726b5.png"
+                }
+            },
+            "distance": {
+                "value": 92,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "6df9b1505ddfb50a362043c5b85037d9",
+            "slug": "2023-08-28-nurnberg-90411-nordostpark-56-c7a1cac2",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "FEX-Frankenexpress",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-28T11:30:00+02:00",
+                    "timestamp": 1693215000,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-28T13:30:00+02:00",
+                    "timestamp": 1693222200,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "regina-2-0",
+                "company": "regiNA 2.0",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "regiNA 2.0",
+                    "long": "regiNA 2.0"
+                },
+                "offer": "Pizzen",
+                "tags": [
+                    "beveragesCoffee",
+                    "italian",
+                    "sweets",
+                    "vegan",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_debitcard"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-56-01690653",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 56, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "56",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48242040",
+                    "longitude": "11.12753940",
+                    "what3words": "kreide.weil.bergbau"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "regiNA 2.0",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png"
+                }
+            },
+            "pointer": {
+                "title": "regiNA 2.0",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png"
+                }
+            },
+            "distance": {
+                "value": 353,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "4389a2ca3ed1a0e2341f002e34f46021",
+            "slug": "2023-08-29-nurnberg-90411-nordostpark-21-ddc4e6d1",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "Nordostpark",
+            "description": "Nordostpark 21 (Hinter der Firma PlusOptix)",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-29T11:00:00+02:00",
+                    "timestamp": 1693299600,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-29T13:30:00+02:00",
+                    "timestamp": 1693308600,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "pfundskerl",
+                "company": "Pfundskerl",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Pfundskerl",
+                    "long": "Pfundskerl"
+                },
+                "offer": "Burger, Pommes & mehr",
+                "tags": [
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "potatoes",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-21-07d7ae95",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 21, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "21",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48557058",
+                    "longitude": "11.12659807",
+                    "what3words": "k\u00fcbel.erh\u00f6hter.sowie"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Pfundskerl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Pfundskerl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png"
+                }
+            },
+            "distance": {
+                "value": 61,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "4e77b3d24355857bf71a4e449a9ade52",
+            "slug": "2023-08-29-nurnberg-90411-nordostpark-82-6ebe0d57",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "N-NORDOSTPARK",
+            "description": "",
+            "sponsor": "SUXXEED",
+            "date": {
+                "start": {
+                    "date": "2023-08-29T11:00:00+02:00",
+                    "timestamp": 1693299600,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-29T13:30:00+02:00",
+                    "timestamp": 1693308600,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "kochstolz",
+                "company": "KOCHSTOLZ",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "KOCHSTOLZ",
+                    "long": "KOCHSTOLZ"
+                },
+                "offer": "SHAKSHUKA - unglaublich lecker !",
+                "tags": [
+                    "beveragesCoffee",
+                    "salads",
+                    "soups",
+                    "vegan",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-483c5537",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48515986",
+                    "longitude": "11.12864213",
+                    "what3words": "anmutige.antworten.weil"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo KOCHSTOLZ",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/d4963c84cdebedea05ea811f26dfef88.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/d4963c84cdebedea05ea811f26dfef88.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/d4963c84cdebedea05ea811f26dfef88.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/d4963c84cdebedea05ea811f26dfef88.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo KOCHSTOLZ",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/2fe5510e3d6ee3544ee2d3a425559d02.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/2fe5510e3d6ee3544ee2d3a425559d02.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/2fe5510e3d6ee3544ee2d3a425559d02.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/2fe5510e3d6ee3544ee2d3a425559d02.png"
+                }
+            },
+            "distance": {
+                "value": 98,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "947b4d9cbd615f9016623bee57c24dcf",
+            "slug": "2023-08-29-nurnberg-90411-nordostpark-33-9c6d8288",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "N\u00fcrnberg - Nordostpark",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-29T11:00:00+02:00",
+                    "timestamp": 1693299600,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-29T13:30:00+02:00",
+                    "timestamp": 1693308600,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "the-dukes",
+                "company": "The Dukes",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "The Dukes",
+                    "long": "The Dukes"
+                },
+                "offer": "Wraps & Salads",
+                "tags": [
+                    "bbqGrill",
+                    "burgerSandwiches",
+                    "salads",
+                    "mexican",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-33-f703895a",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 33, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "33",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48422010",
+                    "longitude": "11.12686490",
+                    "what3words": "ablehnte.staub.essen"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png"
+                }
+            },
+            "distance": {
+                "value": 159,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "aed4af50d38a918223a59841742374e5",
+            "slug": "2023-08-30-nurnberg-90411-nordostpark-23-5edb9218",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "PlusOptix",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-30T11:00:00+02:00",
+                    "timestamp": 1693386000,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-30T13:30:00+02:00",
+                    "timestamp": 1693395000,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "the-banh-mi",
+                "company": "The Banh Mi",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "The Banh Mi",
+                    "long": "The Banh Mi"
+                },
+                "offer": "Banh Mi, Nudelsuppe, Sommerrolle...",
+                "tags": [
+                    "asian",
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "soups",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-23-eab9fbbf",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 23, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "23",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48534000",
+                    "longitude": "11.12634000",
+                    "what3words": "palmen.allemal.gebieten"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo The Banh Mi",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/947819f687654725179071c271c845da.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/947819f687654725179071c271c845da.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/947819f687654725179071c271c845da.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/947819f687654725179071c271c845da.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo The Banh Mi",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/d72afe32c953e755141ef0187a6dc962.png"
+                }
+            },
+            "distance": {
+                "value": 85,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "b90cb0c17cbcd9cde6bdbd1b985ea7e9",
+            "slug": "2023-08-30-nurnberg-90411-nordostpark-82-6818f5d3",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Suxxeed",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-30T11:00:00+02:00",
+                    "timestamp": 1693386000,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-30T13:30:00+02:00",
+                    "timestamp": 1693395000,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "bowls-to-go",
+                "company": "Bowls to go",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Bowls to go",
+                    "long": "Bowls to go"
+                },
+                "offer": "Bowls",
+                "tags": [
+                    "beveragesCoffee",
+                    "salads",
+                    "soups",
+                    "vegan",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-b427217c",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48551710",
+                    "longitude": "11.12862960",
+                    "what3words": "wozu.bemerken.pfleger"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "BO33",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/f2529086577a3552f8596c7421b04fa3.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/f2529086577a3552f8596c7421b04fa3.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/f2529086577a3552f8596c7421b04fa3.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/f2529086577a3552f8596c7421b04fa3.png"
+                }
+            },
+            "pointer": {
+                "title": "BO33",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/e4052b0bf611040892627b480f23ef02.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/e4052b0bf611040892627b480f23ef02.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/e4052b0bf611040892627b480f23ef02.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/e4052b0bf611040892627b480f23ef02.png"
+                }
+            },
+            "distance": {
+                "value": 85,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "8c6b8915576ee4c6899e75d9b7e877a0",
+            "slug": "2023-08-30-nurnberg-90411-nordostpark-21-76bf7f69",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "Plusoptix",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-30T11:15:00+02:00",
+                    "timestamp": 1693386900,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-30T13:30:00+02:00",
+                    "timestamp": 1693395000,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "kuechenkind-streetfood",
+                "company": "K\u00fcchenkind Streetfood",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "K\u00fcchenkind",
+                    "long": "K\u00fcchenkind Streetfood"
+                },
+                "offer": "Sandwiches & mehr",
+                "tags": [
+                    "burgerSandwiches"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-21-3256bbd1",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 21, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "21",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48478000",
+                    "longitude": "11.12615000",
+                    "what3words": "absteigen.essig.betonte"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo K\u00fcchenkind Streetfood",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/967b11ec4788f3a9c16a059491891cbf.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo K\u00fcchenkind Streetfood",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/438f76178b6b2b4fccc2a3081da2dc75.png"
+                }
+            },
+            "distance": {
+                "value": 131,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "ea1756d332150f529270907ea61761ca",
+            "slug": "2023-08-31-nurnberg-90411-nordostpark-82-99de5739",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "N-Nordostpark",
+            "description": "Parkplatz",
+            "sponsor": "Suxxeed",
+            "date": {
+                "start": {
+                    "date": "2023-08-31T11:00:00+02:00",
+                    "timestamp": 1693472400,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-31T13:30:00+02:00",
+                    "timestamp": 1693481400,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "an-di-gastronomie",
+                "company": "an di Gastronomie",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "an di",
+                    "long": "an di Gastronomie"
+                },
+                "offer": "asia & cross over kitchen, Cocktails uvm",
+                "tags": [
+                    "asian",
+                    "bbqGrill",
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "vegan"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google",
+                    "coupon_paynoweatlater",
+                    "coupon_foodschein"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-77e1df9f",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48551860",
+                    "longitude": "11.12868340",
+                    "what3words": "eier.atmung.abbildbar"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo an di Gastronomie",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/9f4e133dfbf2a987239491fbd30bf415.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/9f4e133dfbf2a987239491fbd30bf415.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/9f4e133dfbf2a987239491fbd30bf415.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/9f4e133dfbf2a987239491fbd30bf415.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo an di Gastronomie",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/5294c7d28398c8b5c5c8dcb09978831d.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/5294c7d28398c8b5c5c8dcb09978831d.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/5294c7d28398c8b5c5c8dcb09978831d.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/5294c7d28398c8b5c5c8dcb09978831d.png"
+                }
+            },
+            "distance": {
+                "value": 89,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "58f3f1d2b10fb20a0a5c9be6c2553308",
+            "slug": "2023-08-31-nurnberg-90411-nordostpark-21-e05a2146",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Nordostpark",
+            "description": "Nordostpark 21 (Hinter der Firma PlusOptix)",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-08-31T11:30:00+02:00",
+                    "timestamp": 1693474200,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-08-31T14:00:00+02:00",
+                    "timestamp": 1693483200,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "regina-2-0",
+                "company": "regiNA 2.0",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "regiNA 2.0",
+                    "long": "regiNA 2.0"
+                },
+                "offer": "Pizzen",
+                "tags": [
+                    "beveragesCoffee",
+                    "italian",
+                    "sweets",
+                    "vegan",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_debitcard"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-21-3a8ba7a2",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 21, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "21",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48478000",
+                    "longitude": "11.12615000",
+                    "what3words": "absteigen.essig.betonte"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "regiNA 2.0",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/5004f1ea5e9d9e6a2614b979b6c3404d.png"
+                }
+            },
+            "pointer": {
+                "title": "regiNA 2.0",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c2b16a9c58144d8b356581be0c1a301a.png"
+                }
+            },
+            "distance": {
+                "value": 131,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "f963cf7b15eb79d692909e13e13c8c43",
+            "slug": "2023-09-01-nurnberg-90411-nordostpark-82-62cfdcd0",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "N\u00fcrnberg - Nordostpark - Suxxeed",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-09-01T11:00:00+02:00",
+                    "timestamp": 1693558800,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-09-01T13:30:00+02:00",
+                    "timestamp": 1693567800,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "the-dukes",
+                "company": "The Dukes",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "The Dukes",
+                    "long": "The Dukes"
+                },
+                "offer": "Wraps & Salads",
+                "tags": [
+                    "bbqGrill",
+                    "burgerSandwiches",
+                    "salads",
+                    "mexican",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-6e70894c",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48536863",
+                    "longitude": "11.12892531",
+                    "what3words": "absteigen.fl\u00e4chen.r\u00e4tsel"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png"
+                }
+            },
+            "distance": {
+                "value": 109,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "0badac7024ba16dd6277e9eddd981e10",
+            "slug": "2023-09-04-nurnberg-90411-nordostpark-82-087a8936",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Suxxeed",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-09-04T11:00:00+02:00",
+                    "timestamp": 1693818000,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-09-04T13:30:00+02:00",
+                    "timestamp": 1693827000,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "guerilla-groestl-gourmet-burger",
+                "company": "Guerilla Gr\u00f6stl Gourmet-Burger",
+                "featured": false,
+                "verified": true,
+                "organic": false,
+                "name": {
+                    "short": "Guerilla Gr\u00f6stl",
+                    "long": "Guerilla Gr\u00f6stl Gourmet-Burger"
+                },
+                "offer": "Burger & Gr\u00f6stl",
+                "tags": [
+                    "burgerSandwiches"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-a75f4497",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48551900",
+                    "longitude": "11.12868300",
+                    "what3words": "eier.atmung.abbildbar"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Guerilla Gr\u00f6stl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/34c35dbe3a28fa7f96f79483a63f0b4a.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/34c35dbe3a28fa7f96f79483a63f0b4a.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/34c35dbe3a28fa7f96f79483a63f0b4a.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/34c35dbe3a28fa7f96f79483a63f0b4a.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Guerilla Gr\u00f6stl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/e48a30ba4bcd3d0fc01b34b418fe987b.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/e48a30ba4bcd3d0fc01b34b418fe987b.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/e48a30ba4bcd3d0fc01b34b418fe987b.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/e48a30ba4bcd3d0fc01b34b418fe987b.png"
+                }
+            },
+            "distance": {
+                "value": 89,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "5b104031d5684d4990aa5939affd7b44",
+            "slug": "2023-09-04-nurnberg-90411-nordostpark-55-249da3ad",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Plusoptix GmbH",
+            "description": "Im Innenhof direkt vor der Firma Plusoptix",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-09-04T11:00:00+02:00",
+                    "timestamp": 1693818000,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-09-04T13:30:00+02:00",
+                    "timestamp": 1693827000,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "suppdiwupp8",
+                "company": "Suppdiwupp",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Suppdiwupp",
+                    "long": "Suppdiwupp"
+                },
+                "offer": "K\u00f6stliche Suppen und Eint\u00f6pfe und mehr!",
+                "tags": [
+                    "soups"
+                ],
+                "payments": [
+                    "pay_cash"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-55-cc1eab2d",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 55, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "55",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48551062",
+                    "longitude": "11.12665104",
+                    "what3words": "tr\u00e4umen.ausrufen.schiffe"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Suppdiwupp",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/0b614da31ecfe4c8de0f5c7cdad47451.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/0b614da31ecfe4c8de0f5c7cdad47451.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/0b614da31ecfe4c8de0f5c7cdad47451.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/0b614da31ecfe4c8de0f5c7cdad47451.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Suppdiwupp",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/dc02a662c44ac129dc74f676f527a9c3.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/dc02a662c44ac129dc74f676f527a9c3.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/dc02a662c44ac129dc74f676f527a9c3.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/dc02a662c44ac129dc74f676f527a9c3.png"
+                }
+            },
+            "distance": {
+                "value": 58,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "3eefd0825255418e618566d29fc3eede",
+            "slug": "2023-09-05-nurnberg-90411-nordostpark-33-50dd065a",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "N\u00fcrnberg - Nordostpark",
+            "description": "",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-09-05T11:00:00+02:00",
+                    "timestamp": 1693904400,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-09-05T13:30:00+02:00",
+                    "timestamp": 1693913400,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "the-dukes",
+                "company": "The Dukes",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "The Dukes",
+                    "long": "The Dukes"
+                },
+                "offer": "Wraps & Salads",
+                "tags": [
+                    "bbqGrill",
+                    "burgerSandwiches",
+                    "salads",
+                    "mexican",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-33-f703895a",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 33, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "33",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48422010",
+                    "longitude": "11.12686490",
+                    "what3words": "ablehnte.staub.essen"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/6231b0baac8a57936e45a69f02e1abdb.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Foodtruck",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/cdaaa98bfee2cf6dd6fa37bd55e23027.png"
+                }
+            },
+            "distance": {
+                "value": 159,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "0188b6234f1986300781859731fd179a",
+            "slug": "2023-09-05-nurnberg-90411-nordostpark-21-f90f0a6c",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "Nordostpark",
+            "description": "Nordostpark 21 (Hinter der Firma PlusOptix)",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-09-05T11:00:00+02:00",
+                    "timestamp": 1693904400,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-09-05T13:30:00+02:00",
+                    "timestamp": 1693913400,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "pfundskerl",
+                "company": "Pfundskerl",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Pfundskerl",
+                    "long": "Pfundskerl"
+                },
+                "offer": "Burger, Pommes & mehr",
+                "tags": [
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "potatoes",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash",
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-21-07d7ae95",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 21, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "21",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48557058",
+                    "longitude": "11.12659807",
+                    "what3words": "k\u00fcbel.erh\u00f6hter.sowie"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Pfundskerl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/3b18ac5a588ed4e83b1acea605a35632.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Pfundskerl",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/4d316987cf8b370417a6b300343ca9de.png"
+                }
+            },
+            "distance": {
+                "value": 61,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "0fad42ce2c1cec2c5d3dce435f66e465",
+            "slug": "2023-09-05-nurnberg-90411-nordostpark-55-b63ab218",
+            "type": 1,
+            "category": "food",
+            "skip": false,
+            "sold_out": false,
+            "name": "N\u00fcrnberg Nordostpark",
+            "description": "Hinter Plusoptix",
+            "sponsor": "",
+            "date": {
+                "start": {
+                    "date": "2023-09-05T11:00:00+02:00",
+                    "timestamp": 1693904400,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-09-05T13:30:00+02:00",
+                    "timestamp": 1693913400,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "jennys-verwandelbar",
+                "company": "Jenny\u00b4s VerwandelBar",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "Jenny\u00b4s Bar",
+                    "long": "Jenny\u00b4s VerwandelBar"
+                },
+                "offer": "Bowls",
+                "tags": [
+                    "beveragesCoffee",
+                    "salads",
+                    "vegan",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_cash"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-55-7ecf95e8",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 55, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "55",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48568000",
+                    "longitude": "11.12664000",
+                    "what3words": "ausf\u00fchren.kern.teilt"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo Jenny\u00b4s VerwandelBar",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/ac191aa4752323cda645247713239093.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/ac191aa4752323cda645247713239093.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/ac191aa4752323cda645247713239093.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/ac191aa4752323cda645247713239093.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo Jenny\u00b4s VerwandelBar",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/68a5585fbef42c055968889348d50c9b.png"
+                }
+            },
+            "distance": {
+                "value": 59,
+                "unit": "m"
+            }
+        },
+        {
+            "id": "29d2b05606e5b077e4d6015a6a7e9b81",
+            "slug": "2023-09-05-nurnberg-90411-nordostpark-82-50da9099",
+            "type": 1,
+            "category": "food",
+            "skip": true,
+            "sold_out": false,
+            "name": "N-NORDOSTPARK (Suxxeed)",
+            "description": "",
+            "sponsor": "SUXXEED",
+            "date": {
+                "start": {
+                    "date": "2023-09-05T11:30:00+02:00",
+                    "timestamp": 1693906200,
+                    "timezone": "Europe/Berlin"
+                },
+                "end": {
+                    "date": "2023-09-05T13:30:00+02:00",
+                    "timestamp": 1693913400,
+                    "timezone": "Europe/Berlin"
+                }
+            },
+            "vendor": {
+                "slug": "cold-cuts",
+                "company": "COLD CUTS",
+                "featured": false,
+                "verified": false,
+                "organic": false,
+                "name": {
+                    "short": "COLD CUTS",
+                    "long": "COLD CUTS"
+                },
+                "offer": "Sub Sandwiches",
+                "tags": [
+                    "burgerSandwiches",
+                    "beveragesCoffee",
+                    "sweets",
+                    "vegetarian"
+                ],
+                "payments": [
+                    "pay_creditcard",
+                    "pay_debitcard",
+                    "pay_paypal",
+                    "pay_apple",
+                    "pay_google"
+                ]
+            },
+            "location": {
+                "slug": "nurnberg-90411-nordostpark-82-66c37c07",
+                "distance": {
+                    "value": null,
+                    "unit": null
+                },
+                "address": {
+                    "formated": "Nordostpark 82, 90411 N\u00fcrnberg",
+                    "street": "Nordostpark",
+                    "number": "82",
+                    "zipcode": "90411",
+                    "city": "N\u00fcrnberg"
+                },
+                "position": {
+                    "latitude": "49.48516096",
+                    "longitude": "11.12867107",
+                    "what3words": "muscheln.bestellte.weinrot"
+                },
+                "country": {
+                    "iso": "de",
+                    "address_type": 1,
+                    "date_format": "d.m.Y",
+                    "time_format": "H:i",
+                    "distance_format": "metric"
+                }
+            },
+            "logo": {
+                "title": "Logo COLD CUTS",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/logo/4b057fee1f2df112de7e07461745e2ab.png"
+                }
+            },
+            "pointer": {
+                "title": "Logo COLD CUTS",
+                "dimensions": {
+                    "width": 200,
+                    "height": 150
+                },
+                "url": {
+                    "local": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png",
+                    "europe": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png",
+                    "usa": "https://s3-us-west-2.amazonaws.com/food-truck-data-us-west-2/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png",
+                    "asia": "https://s3.eu-central-1.amazonaws.com/food-truck-data-eu-central-1/media/operator/pointer/c89d2f9b391f6754349844de3abafb8d.png"
+                }
+            },
+            "distance": {
+                "value": 100,
+                "unit": "m"
+            }
+        }
+    ],
+    "messages": [
+        {
+            "api": "if you can read this - check yourself you might be awesome!"
+        }
+    ],
+    "code": 200,
+    "status": "OK",
+    "success": true,
+    "statistics": {
+        "running_time": 192,
+        "unit": "ms",
+        "cached": false,
+        "date": "2023-08-22T10:03:05.729552Z",
+        "time": 1692698585
+    }
+}

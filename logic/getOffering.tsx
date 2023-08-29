@@ -14,7 +14,6 @@ export async function fetchOffering(): Promise<Offering[]> {
       menu: offer.offering 
     }));
 
-    console.log(offerings); 
     return offerings;
   } catch (error) {
     console.error("Error fetching offering data:", error);

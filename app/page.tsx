@@ -13,6 +13,8 @@ import { Card, CardBody, CardFooter, CardHeader, CardProps,CardProvider } from "
 import { Button } from "@nextui-org/button";
 import {Image } from '@nextui-org/image'
 import {Divider} from "@nextui-org/divider";
+import { ThemeProvider } from "next-themes";
+import { useTheme } from 'next-themes';
 
 interface GroupedTrucks {
 	[weekLabel: string]: Truck[];
@@ -39,6 +41,8 @@ export default function Home() {
   useEffect(() => {
     fetchTrucks();
   }, [showNextWeek]);
+
+
 
   const fetchTrucks = async () => {
     try {
@@ -73,6 +77,16 @@ export default function Home() {
     }
   };
 
+  const { resolvedTheme } = useTheme();
+  const [textColor, setTextColor] = useState('white'); // Set initial text color to white for dark mode
+
+
+  useEffect(() => {
+    // Update text color when the theme changes
+    setTextColor(resolvedTheme === 'dark' ? 'white' : 'black');
+  }, [resolvedTheme]);
+
+
   const toggleWeek = () => {
     setShowNextWeek(!showNextWeek);
   };
@@ -80,7 +94,7 @@ export default function Home() {
 		<div style={{ minHeight: '100vh', color: 'white' }}>
 		<div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
 		  {weekdays.map((weekday) => (
-			<div key={weekday} style={{ flexBasis: '20%', marginBottom: '1rem' }}>
+			<div key={weekday} style={{ flexBasis: '20%', marginBottom: '1rem', color: textColor}}>
 			  <h2>{weekday}</h2>
 			  {trucks[weekday]?.map((truck) => (
 			   <Card isBlurred key={truck.name}  className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px] mb-4 mr-2"
@@ -122,7 +136,6 @@ export default function Home() {
 						  />
 						))}
 					  </div>
-					  
 
 					)}
 										</div>

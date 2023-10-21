@@ -15,6 +15,8 @@ import {Image } from '@nextui-org/image'
 import {Divider} from "@nextui-org/divider";
 import { ThemeProvider } from "next-themes";
 import { useTheme } from 'next-themes';
+import NextModal from "./modal";
+
 
 interface GroupedTrucks {
 	[weekLabel: string]: Truck[];
@@ -139,6 +141,7 @@ export default function Home() {
 
 					)}
 										</div>
+						<NextModal></NextModal>
 				</Card>
 			  ))}
   

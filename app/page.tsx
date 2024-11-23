@@ -52,6 +52,8 @@ export default function Home() {
         const truckDate = new Date(truck.weekday);
 
         const currentDate = new Date();
+		const formattedDate = truckDate.toLocaleDateString('en-US');
+		truck.weekday = formattedDate;
 
         const firstDayOfWeek = new Date(
           currentDate.getFullYear(),

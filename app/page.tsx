@@ -53,9 +53,13 @@ export default function Home() {
   const fetchTrucks = async () => {
     try {
       const fetchedTrucks = await fetchCraftToday();
-
       const groupedTrucks = fetchedTrucks.reduce((acc, truck) => {
         const truckDate = new Date(truck.weekday);
+		const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+		const formattedDate = truckDate.toLocaleDateString('en-US');
+  
+		// Add the formatted date to the truck object
+		truck.weekday = formattedDate;
 
         // Calculate the first day of the target week
         const firstDayOfTargetWeek = new Date(

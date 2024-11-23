@@ -12,8 +12,9 @@ export default function AboutPage() {
 					the Patreon with 1$ monthly. The Server costs me 5€ per Month and it would be cool if some of the cost can be gathered using Patreon. 
 					If you want to support this project and the stuff to come in future you&apos;ll find a Sponsor Button in the top right corner.
 					For any kind of Contact please Contact me trough this E-Mailadress: 
-					<div><p>admin.juuldog.dev</p></div>
+
 				</p>
+				<div><p>admin.juuldog.dev</p></div>
 			</div>
 		</div>
 	);

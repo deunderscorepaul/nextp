@@ -74,7 +74,6 @@ export default function Home() {
       }, {} as GroupedTrucks);
 
       setTrucks(groupedTrucks);
-      console.log(groupedTrucks)
     } catch (error) {
       console.error('Error fetching trucks:', error);
     }

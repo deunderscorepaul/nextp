@@ -20,6 +20,7 @@ export async function fetchCraftToday(): Promise<Truck[]> {
       weekday: truckData.date.start.date,
       imageURL: truckData.logo.url.europe || ''
     })); 
+    console.log(trucks);
     return trucks;
   } catch (error) {
     console.error("Error fetching craft data:", error);

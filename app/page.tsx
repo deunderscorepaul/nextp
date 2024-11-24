@@ -133,7 +133,7 @@ export default function Home() {
 						  <Image
 							key={index}
 							style={{width: '40px', height: '40px'}}
-							src={paymentIcons[paymentOption] || ''}
+							src={paymentIcons[paymentOption] || null}
 							alt={`Payment Icon: ${paymentOption}`}
 						  />
 						))}

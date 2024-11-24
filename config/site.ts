@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "Better-Craftplaces",
+	name: "JUULdog.dev",
 	description: "Wer das ließt kann lesen...",
 	navItems: [
 		{

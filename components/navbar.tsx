@@ -59,7 +59,7 @@ import {
 		  <NavbarItem className="hidden sm:flex gap-2">
 			<ThemeSwitch />
 		  </NavbarItem>
-		  <NavbarItem className="hidden md:flex">
+{/* 		  <NavbarItem className="hidden md:flex">
 			<Button
 			  isExternal
 			  as={Link}
@@ -70,7 +70,7 @@ import {
 			>
 			  Sponsor
 			</Button>
-		  </NavbarItem>
+		  </NavbarItem> */}
 		</NavbarContent>
   
 		{/* Mobile menu */}

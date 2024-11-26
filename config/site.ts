@@ -1,7 +1,7 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-	name: "JUULdog.dev",
+	name: "AirCampus-FoodTrucks",
 	description: "Wer das ließt kann lesen...",
 	navItems: [
 		{

@@ -148,6 +148,13 @@ export default function Home() {
 		  ))}
 		</div>
 		<Button onClick={toggleWeek}>{showNextWeek ? 'Show this Week' : 'Show Next Week'}</Button>
-	  </div>
+    <footer style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem',color: 'white', fontSize: '0.9rem', margin: 'auto' }}>
+  <span>
+    <strong>Impressum:</strong> Paul Drescher, Dompfaffstr 32, 91088 Bubenreuth | 
+    Email: <a href="contact@deunderscorepaul.de" style={{ color: '#fff', textDecoration: 'underline' }}>contact@deunderscorepaul.de</a>  
+  </span>
+      </footer>
+    </div>
+    
 	);
 }

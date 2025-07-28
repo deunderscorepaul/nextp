@@ -1,60 +1,56 @@
 "use client"
 import NextLink from "next/link";
 import { Link } from "@nextui-org/link";
-import { Snippet } from "@nextui-org/snippet";
-import { Code } from "@nextui-org/code"
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { Truck } from "@/logic/craftType";
 import { fetchCraftToday } from "@/logic/getCraftplaces";
 import { useEffect, useState } from 'react';
-import { Card, CardBody, CardFooter, CardHeader, CardProps,CardProvider } from "@nextui-org/card";
+import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
-import {Image } from '@nextui-org/image'
-import {Divider} from "@nextui-org/divider";
-import { ThemeProvider } from "next-themes";
+import { Image } from '@nextui-org/image'
+import { Divider } from "@nextui-org/divider";
+import { Chip } from "@nextui-org/chip";
 import { useTheme } from 'next-themes';
+import { CalendarDays, MapPin, Clock, CreditCard, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface GroupedTrucks {
-	[weekLabel: string]: Truck[];
-  }
-  
-  
-  const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+  [weekLabel: string]: Truck[];
+}
+
+const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
 export default function Home() {
-
-	const [trucks, setTrucks] = useState<GroupedTrucks>({});
+  const [trucks, setTrucks] = useState<GroupedTrucks>({});
   const [showNextWeek, setShowNextWeek] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  const paymentIcons: { [key: string]: any } = {
-    pay_creditcard: ('https://images.freeimages.com/fic/images/icons/2034/large_toolbar/256/credit_card.png'),
-    pay_debitcard: ('https://cdn-icons-png.flaticon.com/512/5566/5566931.png'),
-    pay_apple: ('https://cdn-icons-png.flaticon.com/512/5968/5968500.png'),
-    pay_google: ('https://cdn-icons-png.flaticon.com/512/6124/6124998.png'),
-    pay_paypal: ('https://cdn.icon-icons.com/icons2/1195/PNG/512/1490889684-paypal_82515.png'),
-    pay_cash: ('https://w7.pngwing.com/pngs/1017/516/png-transparent-advance-payment-computer-icons-money-cash-payment-icon-dollar-bill-illustration-miscellaneous-angle-text.png'),
-    coupon_foodschein: ('https://cdn-icons-png.flaticon.com/512/590/590461.png')
-    
+  const paymentIcons: { [key: string]: string } = {
+    pay_creditcard: 'https://images.freeimages.com/fic/images/icons/2034/large_toolbar/256/credit_card.png',
+    pay_debitcard: 'https://cdn-icons-png.flaticon.com/512/5566/5566931.png',
+    pay_apple: 'https://cdn-icons-png.flaticon.com/512/5968/5968500.png',
+    pay_google: 'https://cdn-icons-png.flaticon.com/512/6124/6124998.png',
+    pay_paypal: 'https://cdn.icon-icons.com/icons2/1195/PNG/512/1490889684-paypal_82515.png',
+    pay_cash: 'https://w7.pngwing.com/pngs/1017/516/png-transparent-advance-payment-computer-icons-money-cash-payment-icon-dollar-bill-illustration-miscellaneous-angle-text.png',
+    coupon_foodschein: 'https://cdn-icons-png.flaticon.com/512/590/590461.png'
   };
+
   useEffect(() => {
     fetchTrucks();
   }, [showNextWeek]);
 
-
-
   const fetchTrucks = async () => {
+    setLoading(true);
     try {
       const fetchedTrucks = await fetchCraftToday();
 
       const groupedTrucks = fetchedTrucks.reduce((acc, truck) => {
         const truckDate = new Date(truck.weekday);
+        const formattedDate = truckDate.toLocaleDateString('en-US');
+        truck.weekday = formattedDate;
 
         const currentDate = new Date();
-		const formattedDate = truckDate.toLocaleDateString('en-US');
-		truck.weekday = formattedDate;
-
         const firstDayOfWeek = new Date(
           currentDate.getFullYear(),
           currentDate.getMonth(),
@@ -76,85 +72,198 @@ export default function Home() {
       setTrucks(groupedTrucks);
     } catch (error) {
       console.error('Error fetching trucks:', error);
+    } finally {
+      setLoading(false);
     }
   };
 
   const { resolvedTheme } = useTheme();
-  const [textColor, setTextColor] = useState('white'); // Set initial text color to white for dark mode
-
-
-  useEffect(() => {
-    // Update text color when the theme changes
-    setTextColor(resolvedTheme === 'dark' ? 'white' : 'black');
-  }, [resolvedTheme]);
-
 
   const toggleWeek = () => {
     setShowNextWeek(!showNextWeek);
   };
-	return (
-		<div style={{ minHeight: '100vh', color: 'white' }}>
-		<div style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap' }}>
-		  {weekdays.map((weekday) => (
-			<div key={weekday} style={{ flexBasis: '20%', marginBottom: '1rem', color: textColor}}>
-			  <h2>{weekday}</h2>
-			  {trucks[weekday]?.map((truck) => (
-			   <Card isBlurred key={truck.name}  className="border-none bg-background/60 dark:bg-default-100/50 max-w-[610px] mb-4 mr-2"
-			   shadow="sm" >
-				<div  className="flex justify-center items-center">
-				<CardHeader className="mx-auto">{truck.name}</CardHeader>
-				</div>
-				<div className="flex justify-center items-center mb-2">
-				  <Image
-				  			className="mx-auto"
-				  			radius="lg"
-							key={truck.name}
-							style={{width: '100px', height: '70px'}}
-							src={truck.imageURL}
-							alt={``}
-							shadow="sm"
-						  />
-						  </div>
-					<Divider></Divider>
-					<CardBody ><p>{truck.describtion}</p>
-					<p>
-					  Location: <Link href={`https://maps.google.com/?q=${truck.lat},${truck.long}`} target='_blank'>View on Map</Link>
-					</p>
 
-					 <p>{truck.weekday}</p>
-					</CardBody>
-					{truck.offering && truck.offering.length > 0 && (
-					  <CardBody>Offering: {truck.offering}</CardBody>
-					)}
-					<div className="content-center">
-					{truck.payment && truck.payment.length > 0 && (
-					  <div className="flex flex-wrap content-center">
-						{truck.payment.map((paymentOption, index) => (
-						  <Image
-							key={index}
-							style={{width: '40px', height: '40px'}}
-							src={paymentIcons[paymentOption] || null}
-							alt={`Payment Icon: ${paymentOption}`}
-						  />
-						))}
-					  </div>
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-lg text-default-600">Loading food trucks...</p>
+        </div>
+      </div>
+    );
+  }
 
-					)}
-										</div>
-				</Card>
-			  ))}
-  
-			</div>
-		  ))}
-		</div>
-		<Button onClick={toggleWeek}>{showNextWeek ? 'Show this Week' : 'Show Next Week'}</Button>
-    <footer style={{ display: 'flex', justifyContent: 'space-between', padding: '1rem',color: 'white', fontSize: '0.9rem', margin: 'auto' }}>
-  <span>
-    <strong>Impressum:</strong> Paul Drescher, Dompfaffstr 32, 91088 Bubenreuth | 
-    Email: <a href="contact@deunderscorepaul.de" style={{ color: '#fff', textDecoration: 'underline' }}>contact@deunderscorepaul.de</a>  
-  </span>
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-background to-default-50">
+      {/* Hero Section */}
+      <div className="text-center py-12 px-4">
+        <h1 className={title({ size: "lg", color: "foreground" })}>
+          🚚 Food Truck Finder
+        </h1>
+        <p className={subtitle({ class: "mt-4 max-w-2xl mx-auto" })}>
+          Discover delicious food trucks in your area. Fresh meals on wheels, updated daily.
+        </p>
+        
+        {/* Week Toggle */}
+        <div className="flex justify-center mt-8">
+          <Button
+            onClick={toggleWeek}
+            variant="flat"
+            size="lg"
+            startContent={showNextWeek ? <ChevronLeft size={20} /> : <ChevronRight size={20} />}
+            className="bg-primary/10 hover:bg-primary/20 transition-all duration-300"
+          >
+            {showNextWeek ? 'Show This Week' : 'Show Next Week'}
+          </Button>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="container mx-auto px-4 pb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          {weekdays.map((weekday) => (
+            <div key={weekday} className="space-y-4">
+              {/* Day Header */}
+              <div className="sticky top-20 z-10 bg-background/80 backdrop-blur-md rounded-lg p-3 border border-divider">
+                <h2 className="text-xl font-bold text-center flex items-center justify-center gap-2">
+                  <CalendarDays size={20} className="text-primary" />
+                  {weekday}
+                </h2>
+                <p className="text-sm text-default-500 text-center mt-1">
+                  {trucks[weekday]?.length || 0} truck{trucks[weekday]?.length !== 1 ? 's' : ''}
+                </p>
+              </div>
+
+              {/* Trucks for this day */}
+              <div className="space-y-4">
+                {trucks[weekday]?.length > 0 ? (
+                  trucks[weekday].map((truck) => (
+                    <Card
+                      key={truck.name}
+                      className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0 bg-gradient-to-br from-white to-default-50 dark:from-default-100 dark:to-default-200"
+                      isPressable
+                    >
+                      {/* Truck Image */}
+                      <div className="relative overflow-hidden">
+                        <Image
+                          src={truck.imageURL}
+                          alt={truck.name}
+                          className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
+                          radius="none"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                        <div className="absolute bottom-2 left-2 right-2">
+                          <h3 className="text-white font-bold text-lg truncate">
+                            {truck.name}
+                          </h3>
+                        </div>
+                      </div>
+
+                      <CardBody className="p-4 space-y-3">
+                        {/* Description */}
+                        <p className="text-sm text-default-600 line-clamp-2">
+                          {truck.describtion}
+                        </p>
+
+                        {/* Date */}
+                        <div className="flex items-center gap-2 text-sm text-default-500">
+                          <Clock size={16} />
+                          <span>{truck.weekday}</span>
+                        </div>
+
+                        {/* Location */}
+                        <Link
+                          href={`https://maps.google.com/?q=${truck.lat},${truck.long}`}
+                          target="_blank"
+                          className="flex items-center gap-2 text-sm text-primary hover:text-primary-600 transition-colors"
+                        >
+                          <MapPin size={16} />
+                          <span>View on Map</span>
+                        </Link>
+
+                        {/* Offerings */}
+                        {truck.offering && truck.offering.length > 0 && (
+                          <div className="space-y-2">
+                            <p className="text-sm font-medium text-default-700">Offerings:</p>
+                            <div className="flex flex-wrap gap-1">
+                              {truck.offering.slice(0, 3).map((offer, index) => (
+                                <Chip
+                                  key={index}
+                                  size="sm"
+                                  variant="flat"
+                                  color="secondary"
+                                  className="text-xs"
+                                >
+                                  {offer}
+                                </Chip>
+                              ))}
+                              {truck.offering.length > 3 && (
+                                <Chip
+                                  size="sm"
+                                  variant="flat"
+                                  color="default"
+                                  className="text-xs"
+                                >
+                                  +{truck.offering.length - 3} more
+                                </Chip>
+                              )}
+                            </div>
+                          </div>
+                        )}
+                      </CardBody>
+
+                      {/* Payment Methods */}
+                      {truck.payment && truck.payment.length > 0 && (
+                        <CardFooter className="pt-0 pb-4 px-4">
+                          <div className="w-full">
+                            <div className="flex items-center gap-2 mb-2">
+                              <CreditCard size={16} className="text-default-500" />
+                              <span className="text-sm font-medium text-default-700">Payment:</span>
+                            </div>
+                            <div className="flex flex-wrap gap-2">
+                              {truck.payment.map((paymentOption, index) => (
+                                <div
+                                  key={index}
+                                  className="w-8 h-8 rounded-md overflow-hidden border border-divider bg-white p-1"
+                                >
+                                  <Image
+                                    src={paymentIcons[paymentOption]}
+                                    alt={`Payment: ${paymentOption}`}
+                                    className="w-full h-full object-contain"
+                                  />
+                                </div>
+                              ))}
+                            </div>
+                          </div>
+                        </CardFooter>
+                      )}
+                    </Card>
+                  ))
+                ) : (
+                  <div className="text-center py-8 px-4 bg-default-100 rounded-lg border-2 border-dashed border-default-300">
+                    <p className="text-default-500">No trucks scheduled</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-default-100 border-t border-divider mt-16">
+        <div className="container mx-auto px-4 py-8">
+          <div className="text-center text-sm text-default-600">
+            <p className="mb-2">
+              <strong>Impressum:</strong> Paul Drescher, Dompfaffstr 32, 91088 Bubenreuth
+            </p>
+            <p>
+              Email: <Link href="mailto:contact@deunderscorepaul.de" className="text-primary">contact@deunderscorepaul.de</Link>
+            </p>
+          </div>
+        </div>
       </footer>
     </div>
-    
-	);
+  );
 }

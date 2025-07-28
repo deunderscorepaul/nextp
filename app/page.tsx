@@ -149,7 +149,7 @@ export default function Home() {
           {weekdays.map((weekday) => (
             <div key={weekday} className="space-y-4">
               {/* Day Header */}
-              <div className="sticky top-20 z-10 bg-background/80 backdrop-blur-md rounded-lg p-3 border border-divider">
+              <div className="sticky top-20 z-30 bg-background/90 backdrop-blur-md rounded-lg p-3 border border-divider shadow-lg">
                 <h2 className="text-xl font-bold text-center flex items-center justify-center gap-2">
                   <CalendarDays size={20} className="text-primary" />
                   {weekday}
@@ -165,22 +165,26 @@ export default function Home() {
                   trucks[weekday].map((truck) => (
                     <Card
                       key={truck.name}
-                      className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0 bg-gradient-to-br from-white to-default-50 dark:from-default-100 dark:to-default-200"
+                      className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0 bg-gradient-to-br from-white to-default-50 dark:from-default-100 dark:to-default-200 overflow-hidden"
                       isPressable
                     >
                       {/* Truck Image */}
-                      <div className="relative overflow-hidden">
+                      <div className="relative overflow-hidden h-40">
                         <Image
                           src={truck.imageURL}
                           alt={truck.name}
-                          className="w-full h-32 object-cover group-hover:scale-110 transition-transform duration-500"
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                           radius="none"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                        <div className="absolute bottom-2 left-2 right-2">
-                          <h3 className="text-white font-bold text-lg truncate">
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+                        
+                        {/* Truck Name Badge */}
+                        <div className="absolute bottom-3 left-3 right-3 z-10">
+                          <div className="bg-black/40 backdrop-blur-md rounded-lg px-3 py-2 border border-white/20">
+                            <h3 className="text-white font-bold text-lg truncate drop-shadow-sm">
                             {truck.name}
                           </h3>
+                          </div>
                         </div>
                       </div>
 
@@ -249,7 +253,7 @@ export default function Home() {
                               {truck.payment.map((paymentOption, index) => (
                                 <div
                                   key={index}
-                                  className="w-8 h-8 rounded-md overflow-hidden border border-divider bg-white p-1"
+                                  className="w-8 h-8 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200"
                                 >
                                   <Image
                                     src={paymentIcons[paymentOption]}
@@ -265,8 +269,9 @@ export default function Home() {
                     </Card>
                   ))
                 ) : (
-                  <div className="text-center py-8 px-4 bg-default-100 rounded-lg border-2 border-dashed border-default-300">
+                  <div className="text-center py-8 px-4 bg-default-100/50 rounded-lg border-2 border-dashed border-default-300 backdrop-blur-sm">
                     <p className="text-default-500">No trucks scheduled</p>
+                    <p className="text-xs text-default-400 mt-1">Check back later for updates</p>
                   </div>
                 )}
               </div>

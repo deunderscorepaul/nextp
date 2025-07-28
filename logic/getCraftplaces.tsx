@@ -1,6 +1,23 @@
 import { Truck } from "./craftType";
+import { mockTrucks, generateMockTrucksForWeek } from "./mockData";
+
+// Debug mode - set to true for development
+const DEBUG_MODE = process.env.NODE_ENV === 'development';
 
 export async function fetchCraftToday(): Promise<Truck[]> {
+  // Return mock data in debug mode
+  if (DEBUG_MODE) {
+    console.log('🚛 DEBUG MODE: Using mock truck data');
+    // Simulate API delay
+    await new Promise(resolve => setTimeout(resolve, 1000));
+    
+    // Generate trucks for current and next week
+    const currentWeekTrucks = generateMockTrucksForWeek(0);
+    const nextWeekTrucks = generateMockTrucksForWeek(1);
+    
+    return [...currentWeekTrucks, ...nextWeekTrucks];
+  }
+
   try {
     const response = await fetch('/result.json'); // Fetch the JSON file from the public directory
     const responseData = await response.json();

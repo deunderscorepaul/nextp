@@ -14,6 +14,10 @@ import { Divider } from "@nextui-org/divider";
 import { Chip } from "@nextui-org/chip";
 import { useTheme } from 'next-themes';
 import { CalendarDays, MapPin, Clock, CreditCard, ChevronLeft, ChevronRight } from 'lucide-react';
+import { DebugPanel } from '@/components/DebugPanel';
+
+// Debug mode indicator
+const DEBUG_MODE = process.env.NODE_ENV === 'development';
 
 interface GroupedTrucks {
   [weekLabel: string]: Truck[];
@@ -25,6 +29,8 @@ export default function Home() {
   const [trucks, setTrucks] = useState<GroupedTrucks>({});
   const [showNextWeek, setShowNextWeek] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [debugPanelVisible, setDebugPanelVisible] = useState(false);
+  const [lastFetch, setLastFetch] = useState<Date | null>(null);
 
   const paymentIcons: { [key: string]: string } = {
     pay_creditcard: 'https://images.freeimages.com/fic/images/icons/2034/large_toolbar/256/credit_card.png',
@@ -44,6 +50,7 @@ export default function Home() {
     setLoading(true);
     try {
       const fetchedTrucks = await fetchCraftToday();
+      setLastFetch(new Date());
 
       const groupedTrucks = fetchedTrucks.reduce((acc, truck) => {
         const truckDate = new Date(truck.weekday);
@@ -98,7 +105,24 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-br from-background to-default-50">
       {/* Hero Section */}
       <div className="text-center py-12 px-4">
+        {DEBUG_MODE && (
+          <div className="mb-4">
+            <div className="inline-flex items-center gap-2 px-4 py-2 bg-warning/10 border border-warning/20 rounded-full text-warning-600 text-sm font-medium">
+              🐛 Debug Mode Active - Using Mock Data
+            </div>
+          </div>
+        )}
         <h1 className={title({ size: "lg", color: "foreground" })}>
+
+      {/* Debug Panel - Only in development */}
+      {DEBUG_MODE && (
+        <DebugPanel
+          isVisible={debugPanelVisible}
+          onToggle={() => setDebugPanelVisible(!debugPanelVisible)}
+          trucksCount={Object.values(trucks).flat().length}
+          lastFetch={lastFetch}
+        />
+      )}
           🚚 Food Truck Finder
         </h1>
         <p className={subtitle({ class: "mt-4 max-w-2xl mx-auto" })}>

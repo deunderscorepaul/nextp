@@ -2,7 +2,7 @@ import { Truck } from "./craftType";
 import { mockTrucks, generateMockTrucksForWeek } from "./mockData";
 
 // Debug mode - set to true for development
-const DEBUG_MODE = process.env.NODE_ENV === 'development';
+const DEBUG_MODE = false; // Set to true to use mock data
 const BACKEND_URL = process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:3001';
 
 export async function fetchCraftToday(): Promise<Truck[]> {

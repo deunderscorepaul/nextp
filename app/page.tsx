@@ -17,7 +17,7 @@ import { CalendarDays, MapPin, Clock, CreditCard, ChevronLeft, ChevronRight } fr
 import { DebugPanel } from '@/components/DebugPanel';
 
 // Debug mode indicator
-const DEBUG_MODE = process.env.NODE_ENV === 'development';
+const DEBUG_MODE = false; // Set to true to show debug panel
 
 interface GroupedTrucks {
   [weekLabel: string]: Truck[];

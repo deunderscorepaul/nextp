@@ -37,7 +37,7 @@ export default function AboutPage() {
                   <Link href="https://craftplaces.com" target="_blank" className="text-primary font-medium">
                     Craftplaces.com
                   </Link>{" "}
-                  API. We're passionate about helping you discover amazing local food trucks and supporting mobile food vendors in your community.
+                  API. We&apos;re passionate about helping you discover amazing local food trucks and supporting mobile food vendors in your community.
                 </p>
               </CardBody>
             </Card>
@@ -83,7 +83,7 @@ export default function AboutPage() {
             </CardHeader>
             <CardBody className="text-center space-y-4">
               <p className="text-default-600 max-w-md mx-auto">
-                Have questions, suggestions, or want to report an issue? We'd love to hear from you!
+                Have questions, suggestions, or want to report an issue? We&apos;d love to hear from you!
               </p>
               <Button
                 as={Link}

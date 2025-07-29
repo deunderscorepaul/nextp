@@ -80,6 +80,12 @@ class DataService {
   }
 
   async fetchFromCraftplaces() {
+    // Test mode - return mock data
+    if (process.env.TEST_MODE === 'true') {
+      logger.info('TEST MODE: Using mock data instead of API');
+      return this.generateMockData();
+    }
+
     try {
       logger.info('Fetching data from Craftplaces API...');
       
@@ -217,6 +223,53 @@ class DataService {
   getNextUpdateTime() {
     if (!this.lastUpdateTime) return null;
     return new Date(this.lastUpdateTime.getTime() + this.cacheDuration);
+  }
+
+  generateMockData() {
+    const mockTrucks = [
+      {
+        id: "test-1",
+        lat: "49.4875",
+        long: "11.1289",
+        name: "KOCHSTOLZ",
+        offering: ["SHAKSHUKA - unglaublich lecker !"],
+        payment: ["pay_cash", "pay_creditcard", "pay_debitcard", "pay_apple", "pay_google"],
+        describtion: "SHAKSHUKA - unglaublich lecker !",
+        weekday: new Date().toISOString().split('T')[0],
+        imageURL: "https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        id: "test-2",
+        lat: "49.4856",
+        long: "11.1266",
+        name: "Pfundskerl",
+        offering: ["Burger", "Pommes & mehr"],
+        payment: ["pay_cash", "pay_creditcard", "pay_debitcard", "pay_paypal", "pay_apple", "pay_google"],
+        describtion: "Burger, Pommes & mehr",
+        weekday: new Date(Date.now() + 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        imageURL: "https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=400"
+      },
+      {
+        id: "test-3",
+        lat: "49.4845",
+        long: "11.1275",
+        name: "Pizza Express",
+        offering: ["Margherita", "Pepperoni", "Quattro Stagioni"],
+        payment: ["pay_creditcard", "pay_debitcard", "pay_apple"],
+        describtion: "Fresh wood-fired pizza made to order",
+        weekday: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
+        imageURL: "https://images.pexels.com/photos/1566837/pexels-photo-1566837.jpeg?auto=compress&cs=tinysrgb&w=400"
+      }
+    ];
+
+    // Generate trucks for the next week too
+    const nextWeekTrucks = mockTrucks.map((truck, index) => ({
+      ...truck,
+      id: `${truck.id}-next-week`,
+      weekday: new Date(Date.now() + (7 + index) * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
+    }));
+
+    return [...mockTrucks, ...nextWeekTrucks];
   }
 }
 

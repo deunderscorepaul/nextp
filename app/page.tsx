@@ -35,11 +35,15 @@ export default function Home() {
   const fetchTrucks = async () => {
     setLoading(true);
     try {
+      console.log('🚛 Starting fetchTrucks, showNextWeek:', showNextWeek);
       const fetchedTrucks = await fetchCraftToday();
+      console.log('🚛 Fetched trucks:', fetchedTrucks.length, 'trucks');
+      console.log('🚛 Sample truck data:', fetchedTrucks[0]);
       setLastFetch(new Date());
 
       const groupedTrucks = fetchedTrucks.reduce((acc, truck) => {
         const truckDate = new Date(truck.weekday);
+        console.log('🚛 Processing truck:', truck.name, 'date:', truck.weekday, 'parsed:', truckDate);
         const formattedDate = truckDate.toLocaleDateString('en-US');
         truck.weekday = formattedDate;
 
@@ -49,19 +53,27 @@ export default function Home() {
           currentDate.getMonth(),
           currentDate.getDate() - currentDate.getDay() + (showNextWeek ? 7 : 0)
         );
+        console.log('🚛 Week filter - firstDayOfWeek:', firstDayOfWeek, 'truckDate:', truckDate);
 
         const weekLabel = truckDate.toLocaleDateString('en-US', { weekday: 'long' });
 
         if (truckDate >= firstDayOfWeek && truckDate < new Date(firstDayOfWeek.getFullYear(), firstDayOfWeek.getMonth(), firstDayOfWeek.getDate() + 7)) {
+          console.log('🚛 Adding truck to', weekLabel, ':', truck.name);
           if (!acc[weekLabel]) {
             acc[weekLabel] = [];
           }
           acc[weekLabel].push(truck);
+        } else {
+          console.log('🚛 Filtering out truck (wrong week):', truck.name, 'date:', truckDate);
         }
 
         return acc;
       }, {} as GroupedTrucks);
 
+      console.log('🚛 Final grouped trucks:', Object.keys(groupedTrucks).map(day => ({
+        day,
+        count: groupedTrucks[day].length
+      })));
       setTrucks(groupedTrucks);
     } catch (error) {
       console.error('Error fetching trucks:', error);

@@ -21,6 +21,7 @@ export async function fetchCraftToday(): Promise<Truck[]> {
 
   try {
     // Try to fetch from backend first
+    console.log('🚛 Fetching from backend:', `${BACKEND_URL}/api/trucks`);
     const response = await fetch(`${BACKEND_URL}/api/trucks`);
     
     if (!response.ok) {
@@ -28,6 +29,13 @@ export async function fetchCraftToday(): Promise<Truck[]> {
     }
     
     const responseData = await response.json();
+    console.log('🚛 Backend response:', {
+      success: responseData.success,
+      dataLength: responseData.data?.length,
+      cached: responseData.cached,
+      lastUpdated: responseData.lastUpdated,
+      sampleTruck: responseData.data?.[0]
+    });
 
     if (!responseData.success || !Array.isArray(responseData.data)) {
       throw new Error("Invalid response format from backend API");

@@ -96,7 +96,7 @@ Get server and cache status
 |----------|-------------|---------|
 | `PORT` | Server port | `3001` |
 | `NODE_ENV` | Environment | `development` |
-| `CRAFTPLACES_API_URL` | Craftplaces API endpoint | Required |
+| `CRAFTPLACES_API_URL` | Craftplaces API endpoint | `https://api.craftplaces.com/api/v1/dip/apikey/twoweeks` |
 | `CRAFTPLACES_API_KEY` | API authentication key | Required |
 | `CACHE_DURATION_DAYS` | Cache validity in days | `7` |
 | `DATA_REFRESH_CRON` | Cron expression for updates | `0 0 * * 0` |

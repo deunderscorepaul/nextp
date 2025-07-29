@@ -83,42 +83,89 @@ class DataService {
     try {
       logger.info('Fetching data from Craftplaces API...');
       
-      const apiUrl = process.env.CRAFTPLACES_API_URL;
+      const baseUrl = process.env.CRAFTPLACES_API_URL;
       const apiKey = process.env.CRAFTPLACES_API_KEY;
       
-      if (!apiUrl) {
-        throw new Error('CRAFTPLACES_API_URL not configured');
+      if (!baseUrl || !apiKey) {
+        throw new Error('CRAFTPLACES_API_URL and CRAFTPLACES_API_KEY must be configured');
       }
 
+      // Replace 'apikey' in the URL with the actual API key
+      const apiUrl = baseUrl.replace('apikey', apiKey);
+      
+      logger.info(`Fetching from: ${apiUrl.replace(apiKey, '[API_KEY]')}`);
+      
       const response = await axios.get(apiUrl, {
-        headers: {
-          'Authorization': `Bearer ${apiKey}`,
-          'Content-Type': 'application/json',
-          'User-Agent': 'FoodTruckFinder/1.0'
-        },
         timeout: 30000 // 30 second timeout
       });
 
-      if (!response.data || !Array.isArray(response.data.result)) {
-        throw new Error('Invalid API response format');
+      logger.info('Raw API response structure:', {
+        hasData: !!response.data,
+        dataType: typeof response.data,
+        isArray: Array.isArray(response.data),
+        hasResult: response.data && 'result' in response.data,
+        resultType: response.data && response.data.result ? typeof response.data.result : 'undefined'
+      });
+
+      let trucksData;
+      
+      // Handle different possible response structures
+      if (Array.isArray(response.data)) {
+        trucksData = response.data;
+      } else if (response.data && Array.isArray(response.data.result)) {
+        trucksData = response.data.result;
+      } else if (response.data && Array.isArray(response.data.data)) {
+        trucksData = response.data.data;
+      } else {
+        logger.error('Unexpected API response structure:', response.data);
+        throw new Error('Invalid API response format - expected array of trucks');
       }
 
-      const trucks = response.data.result.map(truck => ({
-        id: truck.id || `truck-${Date.now()}-${Math.random()}`,
-        lat: truck.location?.position?.latitude || '0',
-        long: truck.location?.position?.longitude || '0',
-        name: truck.vendor?.company || 'Unknown Truck',
-        offering: truck.vendor?.offer || [],
-        payment: truck.vendor?.payments || [],
-        describtion: truck.description || 'No description available',
-        weekday: truck.date?.start?.date || new Date().toISOString().split('T')[0],
-        imageURL: truck.logo?.url?.europe || 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=400'
-      }));
+      const trucks = trucksData.map((truck, index) => {
+        // Log the structure of the first few trucks to understand the format
+        if (index < 2) {
+          logger.info(`Sample truck ${index + 1} structure:`, {
+            keys: Object.keys(truck),
+            hasLocation: !!truck.location,
+            hasVendor: !!truck.vendor,
+            hasDate: !!truck.date,
+            hasLogo: !!truck.logo
+          });
+        }
+
+        return {
+          id: truck.id || `truck-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+          lat: truck.location?.position?.latitude || truck.lat || '0',
+          long: truck.location?.position?.longitude || truck.long || '0',
+          name: truck.vendor?.company || truck.name || 'Unknown Truck',
+          offering: truck.vendor?.offer || truck.offering || [],
+          payment: truck.vendor?.payments || truck.payment || [],
+          describtion: truck.description || truck.describtion || 'No description available',
+          weekday: truck.date?.start?.date || truck.weekday || new Date().toISOString().split('T')[0],
+          imageURL: truck.logo?.url?.europe || truck.imageURL || 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=400'
+        };
+      });
 
       logger.info(`Successfully fetched ${trucks.length} trucks from API`);
+      
+      // Log a sample of the processed data
+      if (trucks.length > 0) {
+        logger.info('Sample processed truck:', {
+          name: trucks[0].name,
+          offerings: trucks[0].offering.slice(0, 3),
+          payments: trucks[0].payment.slice(0, 3),
+          date: trucks[0].weekday
+        });
+      }
+      
       return trucks;
     } catch (error) {
-      logger.error('Failed to fetch from Craftplaces API:', error.message);
+      logger.error('Failed to fetch from Craftplaces API:', {
+        message: error.message,
+        status: error.response?.status,
+        statusText: error.response?.statusText,
+        url: error.config?.url?.replace(process.env.CRAFTPLACES_API_KEY || '', '[API_KEY]')
+      });
       
       // If it's a network error and we have cached data, use that
       if (this.trucksData.length > 0) {

@@ -90,18 +90,13 @@ class DataService {
       logger.info('Fetching data from Craftplaces API...');
       
       const baseUrl = process.env.CRAFTPLACES_API_URL;
-      const apiKey = process.env.CRAFTPLACES_API_KEY;
       
-      if (!baseUrl || !apiKey || apiKey === 'your_actual_api_key_here' || apiKey === 'apikey') {
+      if (!baseUrl) {
         throw new Error('CRAFTPLACES_API_URL and CRAFTPLACES_API_KEY must be configured with your actual API key');
       }
 
-      // Replace 'apikey' in the URL with the actual API key
-      const apiUrl = baseUrl.replace('apikey', apiKey);
       
-      logger.info(`Fetching from: ${apiUrl.replace(apiKey, '[API_KEY]')}`);
-      
-      const response = await axios.get(apiUrl, {
+      const response = await axios.get(baseUrl, {
         timeout: 30000 // 30 second timeout
       });
 

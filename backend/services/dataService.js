@@ -122,27 +122,16 @@ class DataService {
       }
 
       const trucks = trucksData.map((truck, index) => {
-        // Log the structure of the first few trucks to understand the format
-        if (index < 2) {
-          logger.info(`Sample truck ${index + 1} structure:`, {
-            keys: Object.keys(truck),
-            hasLocation: !!truck.location,
-            hasVendor: !!truck.vendor,
-            hasDate: !!truck.date,
-            hasLogo: !!truck.logo
-          });
-        }
-
         return {
-          id: truck.id || `truck-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-          lat: truck.location?.position?.latitude || truck.lat || '0',
-          long: truck.location?.position?.longitude || truck.long || '0',
-          name: truck.vendor?.company || truck.name || 'Unknown Truck',
-          offering: truck.vendor?.offer || truck.offering || [],
-          payment: truck.vendor?.payments || truck.payment || [],
-          describtion: truck.description || truck.describtion || 'No description available',
-          weekday: truck.date?.start?.date || truck.weekday || new Date().toISOString().split('T')[0],
-          imageURL: truck.logo?.url?.europe || truck.imageURL || 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=400'
+          id: truck.id,
+          lat: truck.location.position.latitude,
+          long: truck.location.position.longitude,
+          name: truck.vendor.company,
+          offering: Array.isArray(truck.vendor.offer) ? truck.vendor.offer : [truck.vendor.offer],
+          payment: truck.vendor.payments || [],
+          describtion: truck.description || truck.vendor.offer || 'Delicious food truck',
+          weekday: truck.date.start.date.split('T')[0], // Extract just the date part
+          imageURL: truck.logo.url.europe || 'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=400'
         };
       });
 

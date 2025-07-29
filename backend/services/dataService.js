@@ -86,8 +86,8 @@ class DataService {
       const baseUrl = process.env.CRAFTPLACES_API_URL;
       const apiKey = process.env.CRAFTPLACES_API_KEY;
       
-      if (!baseUrl || !apiKey) {
-        throw new Error('CRAFTPLACES_API_URL and CRAFTPLACES_API_KEY must be configured');
+      if (!baseUrl || !apiKey || apiKey === 'your_actual_api_key_here' || apiKey === 'apikey') {
+        throw new Error('CRAFTPLACES_API_URL and CRAFTPLACES_API_KEY must be configured with your actual API key');
       }
 
       // Replace 'apikey' in the URL with the actual API key

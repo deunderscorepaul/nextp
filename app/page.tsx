@@ -6,7 +6,7 @@ import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 import { Truck } from "@/logic/craftType";
 import { fetchCraftToday } from "@/logic/getCraftplaces";
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
 import { Image } from '@nextui-org/image'

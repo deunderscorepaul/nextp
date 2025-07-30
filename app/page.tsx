@@ -32,7 +32,7 @@ export default function Home() {
   const [debugPanelVisible, setDebugPanelVisible] = useState(false);
   const [lastFetch, setLastFetch] = useState<Date | null>(null);
 
-  const fetchTrucks = async () => {
+  const fetchTrucks = useCallback(async () => {
     setLoading(true);
     try {
       console.log('🚛 Starting fetchTrucks, showNextWeek:', showNextWeek);
@@ -80,7 +80,7 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [showNextWeek]);
 
   const paymentIcons: { [key: string]: string } = {
     pay_creditcard: 'https://images.freeimages.com/fic/images/icons/2034/large_toolbar/256/credit_card.png',
@@ -94,7 +94,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchTrucks();
-  }, [showNextWeek, fetchTrucks]);
+  }, [fetchTrucks]);
 
   const { resolvedTheme } = useTheme();
 

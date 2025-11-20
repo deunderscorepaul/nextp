@@ -272,10 +272,6 @@ export default function Home() {
                               <CreditCard size={16} className="text-default-500" />
                               <span className="text-sm font-medium text-default-700">Payment:</span>
                             </div>
-                            <div className="flex items-center gap-2 mb-2">
-                              <CreditCard size={16} className="text-default-500" />
-                              <span className="text-sm font-medium text-default-700">Payment:</span>
-                            </div>
                             <div className="flex flex-wrap gap-1">
                               {truck.payment.map((paymentOption, index) => (
                                 <Tooltip

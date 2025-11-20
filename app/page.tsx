@@ -178,11 +178,11 @@ export default function Home() {
                   trucks[weekday].map((truck) => (
                     <Card
                       key={truck.name}
-                      className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0 bg-gradient-to-br from-white to-default-50 dark:from-default-100 dark:to-default-200 overflow-hidden"
+                      className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0 bg-gradient-to-br from-white to-default-50 dark:from-default-100 dark:to-default-200 overflow-hidden h-[500px] flex flex-col"
                       isPressable
                     >
                       {/* Truck Image */}
-                      <div className="relative overflow-hidden h-40">
+                      <div className="relative overflow-hidden h-32 flex-shrink-0">
                         <Image
                           src={truck.imageURL}
                           alt={truck.name}
@@ -192,23 +192,23 @@ export default function Home() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                         
                         {/* Truck Name Badge */}
-                        <div className="absolute bottom-3 left-3 right-3 z-10">
+                        <div className="absolute bottom-2 left-2 right-2 z-10">
                           <div className="bg-black/40 backdrop-blur-md rounded-lg px-3 py-2 border border-white/20">
-                            <h3 className="text-white font-bold text-lg truncate drop-shadow-sm">
+                            <h3 className="text-white font-bold text-base truncate drop-shadow-sm">
                             {truck.name}
                           </h3>
                           </div>
                         </div>
                       </div>
 
-                      <CardBody className="p-4 space-y-3">
+                      <CardBody className="p-4 space-y-3 flex-grow flex flex-col">
                         {/* Description */}
-                        <p className="text-sm text-default-600 line-clamp-2">
+                        <p className="text-sm text-default-600 line-clamp-2 flex-shrink-0">
                           {truck.describtion}
                         </p>
 
                         {/* Date */}
-                        <div className="flex items-center gap-2 text-sm text-default-500">
+                        <div className="flex items-center gap-2 text-sm text-default-500 flex-shrink-0">
                           <Clock size={16} />
                           <span>{truck.weekday}</span>
                         </div>
@@ -217,7 +217,7 @@ export default function Home() {
                         <Link
                           href={`https://maps.google.com/?q=${truck.lat},${truck.long}`}
                           target="_blank"
-                          className="flex items-center gap-2 text-sm text-primary hover:text-primary-600 transition-colors"
+                          className="flex items-center gap-2 text-sm text-primary hover:text-primary-600 transition-colors flex-shrink-0"
                         >
                           <MapPin size={16} />
                           <span>View on Map</span>
@@ -225,7 +225,7 @@ export default function Home() {
 
                         {/* Offerings */}
                         {truck.offering && truck.offering.length > 0 && (
-                          <div className="space-y-2">
+                          <div className="space-y-2 flex-grow">
                             <p className="text-sm font-medium text-default-700">Offerings:</p>
                             <div className="flex flex-wrap gap-1">
                               {truck.offering.slice(0, 3).map((offer, index) => (
@@ -236,7 +236,7 @@ export default function Home() {
                                   color="secondary"
                                   className="text-xs"
                                 >
-                                  {offer}
+                                  {offer.length > 20 ? `${offer.substring(0, 20)}...` : offer}
                                 </Chip>
                               ))}
                               {truck.offering.length > 3 && (
@@ -256,17 +256,17 @@ export default function Home() {
 
                       {/* Payment Methods */}
                       {truck.payment && truck.payment.length > 0 && (
-                        <CardFooter className="pt-0 pb-4 px-4">
+                        <CardFooter className="pt-0 pb-4 px-4 flex-shrink-0">
                           <div className="w-full">
                             <div className="flex items-center gap-2 mb-2">
                               <CreditCard size={16} className="text-default-500" />
                               <span className="text-sm font-medium text-default-700">Payment:</span>
                             </div>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-1">
                               {truck.payment.map((paymentOption, index) => (
                                 <div
                                   key={index}
-                                  className="w-8 h-8 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200"
+                                  className="w-7 h-7 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200"
                                 >
                                   <Image
                                     src={paymentIcons[paymentOption]}
@@ -282,7 +282,7 @@ export default function Home() {
                     </Card>
                   ))
                 ) : (
-                  <div className="text-center py-8 px-4 bg-default-100/50 rounded-lg border-2 border-dashed border-default-300 backdrop-blur-sm">
+                  <div className="text-center py-8 px-4 bg-default-100/50 rounded-lg border-2 border-dashed border-default-300 backdrop-blur-sm h-[500px] flex flex-col items-center justify-center">
                     <p className="text-default-500">No trucks scheduled</p>
                     <p className="text-xs text-default-400 mt-1">Check back later for updates</p>
                   </div>

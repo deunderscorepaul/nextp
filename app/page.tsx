@@ -182,11 +182,11 @@ export default function Home() {
                       isPressable
                     >
                       {/* Truck Image */}
-                      <div className="relative overflow-hidden h-32 flex-shrink-0">
+                      <div className="relative overflow-hidden h-32 flex-shrink-0 flex items-center justify-center bg-default-100">
                         <Image
                           src={truck.imageURL}
                           alt={truck.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                          className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
                           radius="none"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

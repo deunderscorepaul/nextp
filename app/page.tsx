@@ -16,6 +16,7 @@ import { useTheme } from 'next-themes';
 import { CalendarDays, MapPin, Clock, CreditCard, ChevronLeft, ChevronRight } from 'lucide-react';
 import { DebugPanel } from '@/components/DebugPanel';
 import { Impressum } from '@/components/Impressum';
+import { Tooltip } from '@nextui-org/tooltip';
 
 // Debug mode indicator
 const DEBUG_MODE = false; // Set to true to show debug panel
@@ -93,6 +94,15 @@ export default function Home() {
     coupon_foodschein: 'https://cdn-icons-png.flaticon.com/512/590/590461.png'
   };
 
+  const paymentLabels: { [key: string]: string } = {
+    pay_creditcard: 'Credit Card',
+    pay_debitcard: 'Debit Card',
+    pay_apple: 'Apple Pay',
+    pay_google: 'Google Pay',
+    pay_paypal: 'PayPal',
+    pay_cash: 'Cash',
+    coupon_foodschein: 'Food Voucher'
+  };
   useEffect(() => {
     fetchTrucks();
   }, [fetchTrucks]);
@@ -264,16 +274,22 @@ export default function Home() {
                             </div>
                             <div className="flex flex-wrap gap-1">
                               {truck.payment.map((paymentOption, index) => (
-                                <div
+                                <Tooltip
                                   key={index}
-                                  className="w-7 h-7 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200"
+                                  content={paymentLabels[paymentOption] || paymentOption}
+                                  placement="top"
+                                  delay={300}
+                                  closeDelay={100}
+                                  className="bg-default-900 text-white text-sm px-2 py-1 rounded-md"
                                 >
-                                  <Image
-                                    src={paymentIcons[paymentOption]}
-                                    alt={`Payment: ${paymentOption}`}
-                                    className="w-full h-full object-contain"
-                                  />
-                                </div>
+                                  <div className="w-7 h-7 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200 cursor-help">
+                                    <Image
+                                      src={paymentIcons[paymentOption]}
+                                      alt={`Payment: ${paymentOption}`}
+                                      className="w-full h-full object-contain"
+                                    />
+                                  </div>
+                                </Tooltip>
                               ))}
                             </div>
                           </div>

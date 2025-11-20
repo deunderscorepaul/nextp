@@ -3,6 +3,7 @@ import { Link } from "@nextui-org/link";
 import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import { Button } from "@nextui-org/button";
 import { Heart, Mail, Coffee } from "lucide-react";
+import { Impressum } from "@/components/Impressum";
 
 export default function AboutPage() {
   return (
@@ -72,31 +73,7 @@ export default function AboutPage() {
           </div>
 
           {/* Contact Section */}
-          <Card className="shadow-lg border-0 bg-gradient-to-r from-default-50 to-default-100 dark:from-default-100 dark:to-default-200">
-            <CardHeader className="text-center">
-              <div className="mx-auto">
-                <div className="p-3 bg-success/10 rounded-full inline-block mb-3">
-                  <Mail className="text-success" size={28} />
-                </div>
-                <h2 className="text-2xl font-bold">Get In Touch</h2>
-              </div>
-            </CardHeader>
-            <CardBody className="text-center space-y-4">
-              <p className="text-default-600 max-w-md mx-auto">
-                Have questions, suggestions, or want to report an issue? We&apos;d love to hear from you!
-              </p>
-              <Button
-                as={Link}
-                href="mailto:contact@deunderscorepaul.de"
-                color="success"
-                variant="flat"
-                size="lg"
-                startContent={<Mail size={20} />}
-              >
-                contact@deunderscorepaul.de
-              </Button>
-            </CardBody>
-          </Card>
+          <Impressum />
 
           {/* Features Grid */}
           <div className="grid md:grid-cols-3 gap-6 mt-12">

@@ -15,6 +15,7 @@ import { Chip } from "@nextui-org/chip";
 import { useTheme } from 'next-themes';
 import { CalendarDays, MapPin, Clock, CreditCard, ChevronLeft, ChevronRight } from 'lucide-react';
 import { DebugPanel } from '@/components/DebugPanel';
+import { Impressum } from '@/components/Impressum';
 
 // Debug mode indicator
 const DEBUG_MODE = false; // Set to true to show debug panel
@@ -295,13 +296,8 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-default-100 border-t border-divider mt-16">
         <div className="container mx-auto px-4 py-8">
-          <div className="text-center text-sm text-default-600">
-            <p className="mb-2">
-              <strong>Impressum:</strong> Paul Drescher, Dompfaffstr 32, 91088 Bubenreuth
-            </p>
-            <p>
-              Email: <Link href="mailto:contact@deunderscorepaul.de" className="text-primary">contact@deunderscorepaul.de</Link>
-            </p>
+          <div className="max-w-2xl mx-auto">
+            <Impressum />
           </div>
         </div>
       </footer>

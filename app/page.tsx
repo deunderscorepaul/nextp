@@ -158,9 +158,9 @@ export default function Home() {
 
       {/* Main Content */}
       <div className="container mx-auto px-4 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 auto-cols-fr">
           {weekdays.map((weekday) => (
-            <div key={weekday} className="space-y-4">
+            <div key={weekday} className="space-y-4 w-full">
               {/* Day Header */}
               <div className="sticky top-20 z-30 bg-background/90 backdrop-blur-md rounded-lg p-3 border border-divider shadow-lg">
                 <h2 className="text-xl font-bold text-center flex items-center justify-center gap-2">
@@ -178,7 +178,7 @@ export default function Home() {
                   trucks[weekday].map((truck) => (
                     <Card
                       key={truck.name}
-                      className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0 bg-gradient-to-br from-white to-default-50 dark:from-default-100 dark:to-default-200 overflow-hidden h-[500px] flex flex-col"
+                      className="group hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-0 bg-gradient-to-br from-white to-default-50 dark:from-default-100 dark:to-default-200 overflow-hidden h-[500px] w-full flex flex-col"
                       isPressable
                     >
                       {/* Truck Image */}
@@ -282,7 +282,7 @@ export default function Home() {
                     </Card>
                   ))
                 ) : (
-                  <div className="text-center py-8 px-4 bg-default-100/50 rounded-lg border-2 border-dashed border-default-300 backdrop-blur-sm h-[500px] flex flex-col items-center justify-center">
+                  <div className="text-center py-8 px-4 bg-default-100/50 rounded-lg border-2 border-dashed border-default-300 backdrop-blur-sm h-[500px] w-full flex flex-col items-center justify-center">
                     <p className="text-default-500">No trucks scheduled</p>
                     <p className="text-xs text-default-400 mt-1">Check back later for updates</p>
                   </div>

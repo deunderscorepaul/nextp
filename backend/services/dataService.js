@@ -154,7 +154,15 @@ class DataService {
         message: error.message,
         status: error.response?.status,
         statusText: error.response?.statusText,
-        url: error.config?.url?.replace(process.env.CRAFTPLACES_API_KEY || '', '[API_KEY]')
+        url: (() => {
+          try {
+            if (!error.config?.url) return undefined;
+            const parsed = new URL(error.config.url);
+            return `${parsed.origin}${parsed.pathname}`;
+          } catch {
+            return '[REDACTED_URL]';
+          }
+        })()
       });
       
       // If it's a network error and we have cached data, use that

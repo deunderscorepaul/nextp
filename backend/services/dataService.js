@@ -157,8 +157,26 @@ class DataService {
         url: (() => {
           try {
             if (!error.config?.url) return undefined;
-            const parsed = new URL(error.config.url);
-            return `${parsed.origin}${parsed.pathname}`;
+
+            let urlStr = error.config.url;
+
+            // Mask the API key if it exists in the environment
+            const apiKey = process.env.CRAFTPLACES_API_KEY;
+            if (apiKey) {
+              urlStr = urlStr.split(apiKey).join('[API_KEY]');
+            }
+
+            const parsed = new URL(urlStr);
+
+            // Explicitly redact common sensitive query parameters just in case
+            const sensitiveParams = ['key', 'apikey', 'token'];
+            sensitiveParams.forEach(param => {
+              if (parsed.searchParams.has(param)) {
+                parsed.searchParams.set(param, '[REDACTED]');
+              }
+            });
+
+            return parsed.toString();
           } catch {
             return '[REDACTED_URL]';
           }

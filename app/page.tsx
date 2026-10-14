@@ -27,6 +27,23 @@ interface GroupedTrucks {
 
 const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
 
+const getSafeMapUrl = (latStr: string, longStr: string): string => {
+  const lat = parseFloat(latStr);
+  const long = parseFloat(longStr);
+
+  if (isNaN(lat) || isNaN(long)) return '#';
+  if (lat < -90 || lat > 90) return '#';
+  if (long < -180 || long > 180) return '#';
+
+  try {
+    const url = new URL('https://maps.google.com/');
+    url.searchParams.set('q', `${lat},${long}`);
+    return url.toString();
+  } catch (e) {
+    return '#';
+  }
+};
+
 export default function Home() {
   const [trucks, setTrucks] = useState<GroupedTrucks>({});
   const [showNextWeek, setShowNextWeek] = useState(false);
@@ -233,7 +250,7 @@ export default function Home() {
 
                         {/* Location */}
                         <Link
-                          href={`https://maps.google.com/?q=${encodeURIComponent(truck.lat)},${encodeURIComponent(truck.long)}`}
+                          href={getSafeMapUrl(truck.lat, truck.long)}
                           target="_blank"
                           className="flex items-center gap-2 text-sm text-primary hover:text-primary-600 transition-colors flex-shrink-0"
                         >

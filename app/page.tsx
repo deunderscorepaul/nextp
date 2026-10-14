@@ -19,13 +19,30 @@ import { Impressum } from '@/components/Impressum';
 import { Tooltip } from '@nextui-org/tooltip';
 
 // Debug mode indicator
-const DEBUG_MODE = false; // Set to true to show debug panel
+const DEBUG_MODE = true; // Set to true to show debug panel
 
 interface GroupedTrucks {
   [weekLabel: string]: Truck[];
 }
 
 const weekdays = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+
+const getSafeMapUrl = (latStr: string, longStr: string): string => {
+  const lat = parseFloat(latStr);
+  const long = parseFloat(longStr);
+
+  if (isNaN(lat) || isNaN(long)) return '#';
+  if (lat < -90 || lat > 90) return '#';
+  if (long < -180 || long > 180) return '#';
+
+  try {
+    const url = new URL('https://maps.google.com/');
+    url.searchParams.set('q', `${lat},${long}`);
+    return url.toString();
+  } catch (e) {
+    return '#';
+  }
+};
 
 export default function Home() {
   const [trucks, setTrucks] = useState<GroupedTrucks>({});
@@ -49,7 +66,7 @@ export default function Home() {
         currentDate.getMonth(),
         currentDate.getDate() - currentDate.getDay() + (showNextWeek ? 7 : 0)
       );
-      const endOfWeek = new Date(
+      const lastDayOfWeek = new Date(
         firstDayOfWeek.getFullYear(),
         firstDayOfWeek.getMonth(),
         firstDayOfWeek.getDate() + 7
@@ -65,7 +82,7 @@ export default function Home() {
 
         const weekLabel = truckDate.toLocaleDateString('en-US', { weekday: 'long' });
 
-        if (truckDate >= firstDayOfWeek && truckDate < endOfWeek) {
+        if (truckDate >= firstDayOfWeek && truckDate < lastDayOfWeek) {
           console.log('🚛 Adding truck to', weekLabel, ':', truck.name);
           if (!acc[weekLabel]) {
             acc[weekLabel] = [];
@@ -233,7 +250,7 @@ export default function Home() {
 
                         {/* Location */}
                         <Link
-                          href={`https://maps.google.com/?q=${truck.lat},${truck.long}`}
+                          href={getSafeMapUrl(truck.lat, truck.long)}
                           target="_blank"
                           className="flex items-center gap-2 text-sm text-primary hover:text-primary-600 transition-colors flex-shrink-0"
                         >
@@ -290,13 +307,21 @@ export default function Home() {
                                   closeDelay={100}
                                   className="bg-default-900 text-white text-sm px-2 py-1 rounded-md"
                                 >
-                                  <div className="w-7 h-7 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200 cursor-help">
-                                    <Image
-                                      src={paymentIcons[paymentOption]}
-                                      alt={`Payment: ${paymentOption}`}
-                                      className="w-full h-full object-contain"
-                                    />
-                                  </div>
+                                  <button
+                                    type="button"
+                                    className="w-7 h-7 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200 cursor-help focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 shrink-0 flex items-center justify-center"
+                                    style={{ width: '28px', height: '28px', minWidth: '28px', minHeight: '28px' }}
+                                    aria-label={`Accepts ${paymentLabels[paymentOption] || paymentOption}`}
+                                  >
+                                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                                      <img
+                                        src={paymentIcons[paymentOption]}
+                                        alt=""
+                                        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                                      />
+                                    </div>
+                                  </button>
                                 </Tooltip>
                               ))}
                             </div>

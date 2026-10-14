@@ -1,0 +1,66 @@
+
+> next-app-template@0.0.1 dev
+> next dev -p 4000 -p 4003
+
+▲ Next.js 16.4.0 (Turbopack)
+- Local:         http://localhost:4003
+- Network:       http://192.168.0.2:4003
+✓ Ready in 618ms
+✓ Running next.config.js took 38ms
+
+○ Compiling / ...
+ GET / 200 in 1500ms (next.js: 644ms, application-code: 857ms)
+[browser] Error fetching from backend, falling back to static data: TypeError: Failed to fetch
+    at fetchCraftToday (logic/getCraftplaces.tsx:25:28)
+    at Home.useCallback[fetchTrucks] (app/page.tsx:41:50)
+    at Home.useEffect.doFetch (app/page.tsx:108:41)
+    at Home.useEffect (app/page.tsx:109:5)
+  23 |     // Try to fetch from backend first
+  24 |     console.log('🚛 Fetching from backend:', `${BACKEND_URL}/api/trucks`);
+> 25 |     const response = await fetch(`${BACKEND_URL}/api/trucks`);
+     |                            ^
+  26 |
+  27 |     if (!response.ok) {
+  28 |       throw new Error(`Backend API error: ${response.status}`); (logic/getCraftplaces.tsx:47:13)
+[browser] Error fetching from backend, falling back to static data: TypeError: Failed to fetch
+    at fetchCraftToday (logic/getCraftplaces.tsx:25:28)
+    at Home.useCallback[fetchTrucks] (app/page.tsx:41:50)
+    at Home.useEffect.doFetch (app/page.tsx:108:41)
+    at Home.useEffect (app/page.tsx:109:5)
+  23 |     // Try to fetch from backend first
+  24 |     console.log('🚛 Fetching from backend:', `${BACKEND_URL}/api/trucks`);
+> 25 |     const response = await fetch(`${BACKEND_URL}/api/trucks`);
+     |                            ^
+  26 |
+  27 |     if (!response.ok) {
+  28 |       throw new Error(`Backend API error: ${response.status}`); (logic/getCraftplaces.tsx:47:13)
+ GET /result.json 404 in 1349ms (next.js: 1215ms, application-code: 134ms)
+[browser] Fallback data also failed: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON (logic/getCraftplaces.tsx:73:15)
+ GET /result.json 404 in 85ms (next.js: 8ms, application-code: 77ms)
+[browser] Error fetching trucks: Error: Both backend and fallback data sources failed
+    at fetchCraftToday (logic/getCraftplaces.tsx:74:13)
+    at async Home.useCallback[fetchTrucks] (app/page.tsx:41:29)
+    at async Home.useEffect.doFetch (app/page.tsx:108:35)
+  72 |     } catch (fallbackError) {
+  73 |       console.error("Fallback data also failed:", fallbackError);
+> 74 |       throw new Error("Both backend and fallback data sources failed");
+     |             ^
+  75 |     }
+  76 |   }
+  77 | } (app/page.tsx:81:15)
+[browser] Fallback data also failed: SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+SyntaxError: Unexpected token '<', "<!DOCTYPE "... is not valid JSON (logic/getCraftplaces.tsx:73:15)
+[browser] Error fetching trucks: Error: Both backend and fallback data sources failed
+    at fetchCraftToday (logic/getCraftplaces.tsx:74:13)
+    at async Home.useCallback[fetchTrucks] (app/page.tsx:41:29)
+    at async Home.useEffect.doFetch (app/page.tsx:108:35)
+  72 |     } catch (fallbackError) {
+  73 |       console.error("Fallback data also failed:", fallbackError);
+> 74 |       throw new Error("Both backend and fallback data sources failed");
+     |             ^
+  75 |     }
+  76 |   }
+  77 | } (app/page.tsx:81:15)
+[browser] [Next UI] [useButton]: onClick is deprecated, please use onPress instead. See: https://github.com/nextui-org/nextui/issues/4292 []
+[?25h

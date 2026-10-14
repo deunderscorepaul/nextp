@@ -19,7 +19,7 @@ import { Impressum } from '@/components/Impressum';
 import { Tooltip } from '@nextui-org/tooltip';
 
 // Debug mode indicator
-const DEBUG_MODE = false; // Set to true to show debug panel
+const DEBUG_MODE = true; // Set to true to show debug panel
 
 interface GroupedTrucks {
   [weekLabel: string]: Truck[];
@@ -290,13 +290,21 @@ export default function Home() {
                                   closeDelay={100}
                                   className="bg-default-900 text-white text-sm px-2 py-1 rounded-md"
                                 >
-                                  <div className="w-7 h-7 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200 cursor-help">
-                                    <Image
-                                      src={paymentIcons[paymentOption]}
-                                      alt={`Payment: ${paymentOption}`}
-                                      className="w-full h-full object-contain"
-                                    />
-                                  </div>
+                                  <button
+                                    type="button"
+                                    className="w-7 h-7 rounded-md overflow-hidden border border-divider bg-white p-1 hover:scale-110 transition-transform duration-200 cursor-help focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 shrink-0 flex items-center justify-center"
+                                    style={{ width: '28px', height: '28px', minWidth: '28px', minHeight: '28px' }}
+                                    aria-label={`Accepts ${paymentLabels[paymentOption] || paymentOption}`}
+                                  >
+                                    <div style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                                      <img
+                                        src={paymentIcons[paymentOption]}
+                                        alt=""
+                                        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                                      />
+                                    </div>
+                                  </button>
                                 </Tooltip>
                               ))}
                             </div>

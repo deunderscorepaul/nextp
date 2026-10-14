@@ -1,0 +1,9 @@
+
+> next-app-template@0.0.1 start
+> next start -p 4007
+
+▲ Next.js 16.4.0
+- Local:         http://localhost:4007
+- Network:       http://192.168.0.2:4007
+✓ Ready in 204ms
+✓ Running next.config.js took 23ms

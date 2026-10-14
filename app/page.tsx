@@ -227,7 +227,7 @@ export default function Home() {
 
                         {/* Location */}
                         <Link
-                          href={`https://maps.google.com/?q=${truck.lat},${truck.long}`}
+                          href={`https://maps.google.com/?q=${encodeURIComponent(truck.lat)},${encodeURIComponent(truck.long)}`}
                           target="_blank"
                           className="flex items-center gap-2 text-sm text-primary hover:text-primary-600 transition-colors flex-shrink-0"
                         >

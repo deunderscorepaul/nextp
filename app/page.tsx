@@ -72,15 +72,18 @@ export default function Home() {
         firstDayOfWeek.getDate() + 7
       );
 
+      const dateFormatter = new Intl.DateTimeFormat('en-US');
+      const weekdayFormatter = new Intl.DateTimeFormat('en-US', { weekday: 'long' });
+
       const groupedTrucks = fetchedTrucks.reduce((acc, truck) => {
         const truckDate = new Date(truck.weekday);
         console.log('🚛 Processing truck:', truck.name, 'date:', truck.weekday, 'parsed:', truckDate);
-        const formattedDate = truckDate.toLocaleDateString('en-US');
+        const formattedDate = dateFormatter.format(truckDate);
         truck.weekday = formattedDate;
 
         console.log('🚛 Week filter - firstDayOfWeek:', firstDayOfWeek, 'truckDate:', truckDate);
 
-        const weekLabel = truckDate.toLocaleDateString('en-US', { weekday: 'long' });
+        const weekLabel = weekdayFormatter.format(truckDate);
 
         if (truckDate >= firstDayOfWeek && truckDate < lastDayOfWeek) {
           console.log('🚛 Adding truck to', weekLabel, ':', truck.name);

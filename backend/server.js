@@ -88,7 +88,7 @@ app.get('/api/status', (req, res) => {
 });
 
 // 404 handler
-app.use('*', (req, res) => {
+app.use( (req, res) => {
   res.status(404).json({
     success: false,
     error: 'Endpoint not found',

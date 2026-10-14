@@ -43,23 +43,29 @@ export default function Home() {
       console.log('🚛 Sample truck data:', fetchedTrucks[0]);
       setLastFetch(new Date());
 
+      const currentDate = new Date();
+      const firstDayOfWeek = new Date(
+        currentDate.getFullYear(),
+        currentDate.getMonth(),
+        currentDate.getDate() - currentDate.getDay() + (showNextWeek ? 7 : 0)
+      );
+      const endOfWeek = new Date(
+        firstDayOfWeek.getFullYear(),
+        firstDayOfWeek.getMonth(),
+        firstDayOfWeek.getDate() + 7
+      );
+
       const groupedTrucks = fetchedTrucks.reduce((acc, truck) => {
         const truckDate = new Date(truck.weekday);
         console.log('🚛 Processing truck:', truck.name, 'date:', truck.weekday, 'parsed:', truckDate);
         const formattedDate = truckDate.toLocaleDateString('en-US');
         truck.weekday = formattedDate;
 
-        const currentDate = new Date();
-        const firstDayOfWeek = new Date(
-          currentDate.getFullYear(),
-          currentDate.getMonth(),
-          currentDate.getDate() - currentDate.getDay() + (showNextWeek ? 7 : 0)
-        );
         console.log('🚛 Week filter - firstDayOfWeek:', firstDayOfWeek, 'truckDate:', truckDate);
 
         const weekLabel = truckDate.toLocaleDateString('en-US', { weekday: 'long' });
 
-        if (truckDate >= firstDayOfWeek && truckDate < new Date(firstDayOfWeek.getFullYear(), firstDayOfWeek.getMonth(), firstDayOfWeek.getDate() + 7)) {
+        if (truckDate >= firstDayOfWeek && truckDate < endOfWeek) {
           console.log('🚛 Adding truck to', weekLabel, ':', truck.name);
           if (!acc[weekLabel]) {
             acc[weekLabel] = [];

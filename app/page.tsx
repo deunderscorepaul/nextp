@@ -103,8 +103,10 @@ export default function Home() {
     pay_cash: 'Cash',
     coupon_foodschein: 'Food Voucher'
   };
+
   useEffect(() => {
-    fetchTrucks();
+    const doFetch = async () => { await fetchTrucks(); };
+    doFetch();
   }, [fetchTrucks]);
 
   const { resolvedTheme } = useTheme();

@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const helmet = require('helmet');
+const rateLimit = require('express-rate-limit');
 const cron = require('node-cron');
 const path = require('path');
 require('dotenv').config();
@@ -11,6 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Middleware
+app.use(helmet()); // Security headers
 app.use(cors({
   origin: ['http://localhost:4000', 'http://localhost:3000'],
   credentials: true
@@ -18,6 +21,31 @@ app.use(cors({
 
 app.use(express.json());
 app.use(express.static('public'));
+
+// Rate Limiting
+const apiLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
+  standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
+  legacyHeaders: false, // Disable the `X-RateLimit-*` headers
+  message: {
+    success: false,
+    error: 'Too many requests, please try again later.'
+  }
+});
+
+const refreshLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 5, // Limit each IP to 5 refresh requests per hour
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: {
+    success: false,
+    error: 'Too many refresh requests, please try again later.'
+  }
+});
+
+app.use('/api/', apiLimiter);
 
 // Logging middleware
 app.use((req, res, next) => {
@@ -56,7 +84,7 @@ app.get('/api/trucks', async (req, res) => {
   }
 });
 
-app.get('/api/trucks/refresh', async (req, res) => {
+app.get('/api/trucks/refresh', refreshLimiter, async (req, res) => {
   try {
     logger.info('Manual data refresh requested');
     const trucks = await dataService.refreshData();
